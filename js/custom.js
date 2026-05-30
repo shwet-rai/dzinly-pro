@@ -14,7 +14,7 @@
 
 
     var swiper = new Swiper(".ourworkSwiper", {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 16,
       centeredSlides: true,
       loop: false,
@@ -22,13 +22,12 @@
             delay: 1000,
             disableOnInteraction: false,
         },
-
         speed: 1000,
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+        breakpoints: {
+            320: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 }
+        }
     });
 
 
