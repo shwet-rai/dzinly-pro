@@ -10,49 +10,6 @@
     }
     });
 
-    document.querySelectorAll('.before-after').forEach((container) => {
-        const slider = container.querySelector('.slider');
-        const beforeWrapper = container.querySelector('.before-wrapper');
-        let isDragging = false;
-        const moveSlider = (x) => {
-            const rect = container.getBoundingClientRect();
-            let offsetX = x - rect.left;
-            if (offsetX < 0) offsetX = 0;
-            if (offsetX > rect.width) offsetX = rect.width;
-            const percent = (offsetX / rect.width) * 100;
-            beforeWrapper.style.width = percent + '%';
-            slider.style.left = percent + '%';
-        };
-
-        // Mouse Events
-        slider.addEventListener('mousedown', () => {
-            isDragging = true;
-        });
-
-        window.addEventListener('mouseup', () => {
-            isDragging = false;
-        });
-
-        window.addEventListener('mousemove', (e) => {
-            if (!isDragging) return;
-            moveSlider(e.clientX);
-        });
-
-        // Touch Events
-        slider.addEventListener('touchstart', () => {
-            isDragging = true;
-        });
-
-        window.addEventListener('touchend', () => {
-            isDragging = false;
-        });
-
-        window.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            moveSlider(e.touches[0].clientX);
-        });
-    });
-
     lucide.createIcons();
 
 
@@ -77,11 +34,11 @@
 
     var swiper = new Swiper(".logoSwiper", {
         slidesPerView: 'auto',
-        spaceBetween: 16,
+        spaceBetween: 40,
         loop: true,
         freeMode: true,
         centeredSlides: false,
-        allowTouchMove: false,
+        allowTouchMove: true,
 
         autoplay: {
             delay: 0,

@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="node_modules/flowbite/dist/flowbite.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
 
-    
     <title>Dzinly</title>
 </head>
+
 <body class="min-h-screen">
 
 <header id="header" class="p-4 fixed w-full transition-all top-0 z-20">
@@ -85,70 +87,43 @@
     </div>
     <div class="patners bg-primary-light py-4">
         <div class="swiper logoSwiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper justify-center">
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/partner2.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/architectural-digest.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/dbusiness.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/national-association-of-realtors.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/realtor-magazine.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/domino.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
                 <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
+                    <img src="img/midwest-living.png" class="w-auto mx-auto h-[34px]" alt="">
                 </div>
 
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner1.png" class="w-auto mx-auto" alt="">
-                </div>
-
+                
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-4 lg:py-24 bg-primary-light/50 px-4">
+<section class="py-24 bg-primary-light/50 px-4">
     <div class="container max-w-7xl mx-auto">
         <div class="max-w-3xl mx-auto">
             <h4 class="italic text-center text-xl md:text-4xl">Design and material selection — two things every 
@@ -218,6 +193,7 @@
 
 <section class="py-20 px-4">
     <div class="container max-w-7xl mx-auto">
+
         <div class="mb-8">
             <ul class="flex gap-6 justify-center flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                 <li class="me-2" role="presentation">
@@ -248,81 +224,65 @@
 
         <div id="default-tab-content">
             <div class="hidden" id="profile" role="tabpanel">
-                <!-- Comparison Slider -->
-                <div class="before-after relative w-full overflow-hidden select-none">
-                    <!-- AFTER IMAGE -->
-                    <img src="img/after-1.jpg" class="w-full h-[700px] object-cover min-w-[75vw]">
-                    <!-- BEFORE IMAGE -->
-                    <div class="before-wrapper absolute top-0 left-0 h-full overflow-hidden" style="width:50%;">
-                        <img src="img/before-1.jpg" class="w-full h-full min-w-[75vw] object-cover absolute top-0 left-0">
-                    </div>
-                    <!-- SLIDER -->
-                    <div class="slider absolute top-0 bottom-0 w-[1px] bg-white cursor-ew-resize z-20" style="left:50%;">
-                        <!-- CIRCLE -->
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                            w-12 h-12 rounded-full border-4 border-white bg-white shadow-lg
-                            flex items-center justify-center text-xl">
-                            ↔
-                        </div>
-                    </div>
+                <div class="relative flex w-full">
+                    <img-comparison-slider>
+                        <img slot="first" src="img/after-1.jpg">
+                        <img slot="second" src="img/before-1.jpg">
 
-                    <!-- LABELS -->
-                    <div class="absolute left-5 bottom-5 bg-[#dfe6c7] px-5 py-2 uppercase tracking-[4px] text-sm z-10">
-                        Before
-                    </div>
+                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
+                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
+                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
+                        </svg>
+                    </img-comparison-slider>
+                    <!-- Before Label -->
+                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                        BEFORE
+                    </span>
 
-                    <div class="absolute right-5 bottom-5 bg-[#dfe6c7] px-5 py-2 uppercase tracking-[4px] text-sm z-10">
-                        After
-                    </div>
-
+                    <!-- After Label -->
+                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                        AFTER
+                    </span>
                 </div>
-
                 <div class="grid grid-cols-2 text-center">
-                    <div class="bg-primary p-2 px-10 text-white border-r border-white text-sm">
+                    <div class="bg-primary py-2 px-10 text-white border-r border-white text-sm">
                         Same home. New colors, materials & architectural details — every option visualized before a single product is ordered.
                     </div>
-                    <div class="bg-primary p-2 px-10 text-white text-sm">
+                    <div class="bg-primary py-2 px-10 border-l border-white text-white text-sm">
                         Same home. New colors, materials & architectural details — every option visualized before a single product is ordered.
                     </div>
                 </div>
-
             </div>
 
             <div class="hidden" id="dashboard" role="tabpanel">
-                <!-- Comparison Slider -->
-                <div class="before-after relative w-full overflow-hidden select-none">
-                    <!-- AFTER IMAGE -->
-                    <img src="img/after-1.jpg" class="w-full h-[700px] object-cover min-w-[75vw]">
-                    <!-- BEFORE IMAGE -->
-                    <div class="before-wrapper absolute top-0 left-0 h-full overflow-hidden" style="width:50%;">
-                        <img src="img/before-1.jpg" class="w-full h-full min-w-[75vw] object-cover absolute top-0 left-0">
-                    </div>
-                    <!-- SLIDER -->
-                    <div class="slider absolute top-0 bottom-0 w-[1px] bg-white cursor-ew-resize z-20" style="left:50%;">
-                        <!-- CIRCLE -->
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                            w-12 h-12 rounded-full border-4 border-white bg-white shadow-lg
-                            flex items-center justify-center text-xl">
-                            ↔
-                        </div>
-                    </div>
+                <div class="relative flex w-full">
+                    <img-comparison-slider>
+                        <img slot="first" src="img/after-1.jpg">
+                        <img slot="second" src="img/before-1.jpg">
+                        
+                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
+                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
+                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
+                        </svg>
+                    </img-comparison-slider>
+                    <!-- Before Label -->
+                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                        BEFORE
+                    </span>
 
-                    <!-- LABELS -->
-                    <div class="absolute left-5 bottom-5 bg-[#dfe6c7] px-5 py-2 uppercase tracking-[4px] text-sm z-10">
-                        Before
-                    </div>
-
-                    <div class="absolute right-5 bottom-5 bg-[#dfe6c7] px-5 py-2 uppercase tracking-[4px] text-sm z-10">
-                        After
-                    </div>
-
+                    <!-- After Label -->
+                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                        AFTER
+                    </span>
                 </div>
 
                 <div class="grid grid-cols-2 text-center">
-                    <div class="bg-primary p-2 px-10 text-white border-r border-white text-sm">
+                    <div class="bg-primary py-2 px-12 text-white border-r border-white text-sm">
                         Same home. New colors, materials & architectural details — every option visualized before a single product is ordered.
                     </div>
-                    <div class="bg-primary p-2 px-10 text-white text-sm">
+                    <div class="bg-primary py-2 px-12 border-l border-white text-white text-sm">
                         Same home. New colors, materials & architectural details — every option visualized before a single product is ordered.
                     </div>
                 </div>
@@ -363,7 +323,7 @@
 
                 <!-- Icon -->
                 <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                    <i data-lucide="monitor"></i>
+                    <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
                 </div>
 
                 <!-- Content -->
@@ -391,7 +351,7 @@
                 </h2>
 
                 <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="brain"></i>
+                <i data-lucide="brain" stroke-width="1" class="w-10 h-10"></i>
                 </div>
 
                 <div class="relative z-10">
@@ -416,7 +376,7 @@
                 </h2>
 
                 <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="sparkles"></i>
+                <i data-lucide="sparkles" stroke-width="1" class="w-10 h-10"></i>
                 </div>
 
                 <div class="relative z-10">
@@ -440,7 +400,7 @@
                 </h2>
 
                 <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="list-checks"></i>
+                <i data-lucide="list-checks" stroke-width="1" class="w-10 h-10"></i>
                 </div>
 
                 <div class="relative z-10">
@@ -464,7 +424,7 @@
                 </h2>
 
                 <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="users"></i>
+                <i data-lucide="users" stroke-width="1" class="w-10 h-10"></i>
                 </div>
 
                 <div class="relative z-10">
@@ -488,7 +448,7 @@
                 </h2>
 
                 <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="house-plus"></i>
+                <i data-lucide="house-plus" stroke-width="1" class="w-10 h-10"></i>
                 </div>
 
                 <div class="relative z-10">
@@ -1022,7 +982,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-4">
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-[#CE8DAF] tracking-widest">Refine</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-white"></i>
@@ -1043,7 +1003,7 @@
                 </div>
             </div>
             
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-primary tracking-widest">SIDING CONTRACTOR</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-primary"></i>
@@ -1062,7 +1022,7 @@
                 </div>
             </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-[#CE8DAF] tracking-widest">BUILDER</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-white"></i>
@@ -1080,7 +1040,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-primary tracking-widest">LANDSCAPER</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-primary"></i>
@@ -1099,7 +1059,7 @@
                 </div>
             </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-[#CE8DAF] tracking-widest">GENERAL CONTRACTOR</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-white"></i>
@@ -1117,7 +1077,7 @@
                 </div>
             </div>
 
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-primary tracking-widest">BUILDER</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-primary"></i>
@@ -1135,7 +1095,7 @@
                 </div>
             </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-[#CE8DAF] tracking-widest">roofer</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-white"></i>
@@ -1153,7 +1113,7 @@
                 </div>
             </div>
             
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-white h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-primary tracking-widest">LANDSCAPER</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-primary"></i>
@@ -1172,7 +1132,7 @@
                 </div>
             </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 aspect-square">
+            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-8 md:aspect-square">
                 <div class="title uppercase text-[#CE8DAF] tracking-widest">PAINTER</div>
                 <div class="flex flex-col gap-4 h-full">
                     <i data-lucide="Quote" class="text-white"></i>

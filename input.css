@@ -112,3 +112,21 @@
         @apply text-black;
     }
 }
+
+img-comparison-slider {
+    --divider-width: 2px;
+    --divider-color: #fff;
+    --default-handle-width: 60px;
+    outline: none;
+    width: 100%;
+}
+img-comparison-slider::part(handle) {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #000;
+}
+img-comparison-slider.rendered img {
+    width: 100%;
+}
