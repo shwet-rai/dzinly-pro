@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="node_modules/flowbite/dist/flowbite.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+
+    <title>Dzinly</title>
+</head>
+
+<body class="min-h-screen">
+
+<header id="header" class="p-4 fixed w-full transition-all top-0 z-20">
+    <div class="flex justify-between">
+        <div class="logo mr-6">
+            <a class="logo-w" href="javascript:void(0)"> <img src="img/logo-w.svg" alt=""> </a>
+            <a class="logo-d" href="javascript:void(0)"> <img src="img/logo.svg" alt=""> </a>
+        </div>
+        <div class="menuicon flex items-center justify-center lg:hidden" 
+        data-drawer-target="drawer-mobile"
+        data-drawer-show="drawer-mobile"
+        aria-controls="drawer-mobile"> 
+            <i data-lucide="menu"></i>
+        </div>
+        <div class="hidden md:flex justify-between w-full">
+            <div class="navbar nav-left flex items-center gap-6 uppercase tracking-widest text-sm">
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a>
+            </div>
+            <div class="navbar nav-right flex items-center gap-5 uppercase tracking-widest text-sm">
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Recent</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Projects</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">FAQ's</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Sign In</a>   
+                <a href="javascript:void(0)" class="btn">Get Started</a> 
+            </div>
+        </div>
+    </div> 
+</header>
+
+<!-- Mobile Menu -->
+
+<div id="drawer-mobile" class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80" tabindex="-1" aria-labelledby="drawer-label">
+    <div class="flex items-center justify-between mb-8">
+        <a href="javascript:void(0)"> <img src="img/logo.svg" alt=""> </a>
+        <button type="button" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">✕</button>
+    </div>
+
+    <div class="py-4 overflow-y-auto">
+        <div class="navbar nav-left flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a>
+        </div>
+        <div class="border-t border-primary/30 my-4"></div>
+        <div class="navbar nav-right flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Recent</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Projects</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">FAQ's</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Sign In</a>   
+        </div>
+    </div>
+</div>
+
+
+<section class="py-20 px-4 bg-primary">
+    <div class="container max-w-7xl mx-auto">
+        <h1 class="text-white text-2xl md:text-5xl uppercase font-semibold my-4 tracking-widest md:tracking-normal text-center">
+            DZINLY Enterprise Plan
+        </h1>
+    </div>
+</section>
+
+<section class="py-20 px-4">
+    <div class="container max-w-7xl mx-auto">
+        <div class="max-w-3xl mx-auto">
+            <h4 class="italic text-center text-xl md:text-4xl">We Help Exterior Home Improvement Companies 
+                <span class="text-primary">Close More Projects. Faster.</span></h4>
+            <div class="flex items-center justify-center gap-1 mt-5 text-center">
+                Everything your sales process needs to close faster, convert more clients, and increase your average project value
+all under your brand, with zero design overhead
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-15 max-w-4xl mx-auto">
+                
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">Fully Branded Client Portal</div>
+                        <p>Your logo, your domain no DZINLY branding anywhere clients can see. A premium, professional experience makes your company look established and trustworthy before the first conversation even starts.</p>
+                        <p class="text-primary mt-2">↑ Conversion rates & perceived value.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    WHITE-LABEL
+                </span>
+            </div>
+
+                <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">You Control Pricing & Margins</div>
+                        <p>Set your own rate for every service. Our intentionally low costs leave you significant room above industry-standard pricing turning design from an expense into a direct revenue line</p>
+                        <p class="text-primary">↑ ROI & average project value.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    REVENUE
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">US-Based Designers & Architects</div>
+                        <p>Professional designers work invisibly under your brand combining Al-powered speed with real human expertise behind every result. Clients receive trusted, designer-approved renderings that help projects move forward faster.</p>
+                        <p class="text-primary">↑ Sales performance & close rates.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    YOUR BRAND
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">Dedicated Project Coordinator</div>
+                        <p>One point of contact for every question no ticket queues, no hunting for help. Projects move forward without bottlenecks, and your team spends time on billable work instead of chasing answers.</p>
+                        <p class="text-primary">↑ Efficiency & operational throughput.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    SUPPORT
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">Full Visibility - Always</div>
+                        <p>Every client message, design revision, and approval is visible to you in real time. Stay informed without managing the process your clients move forward confidently while you stay in control.</p>
+                        <p class="text-primary">↑ Efficiency & client confidence.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    VISIBILITY
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">You Present the Results</div>
+                        <p>Reveal the finished designs yourself creating a premium, high-impact moment that reinforces your expertise and makes your company look exceptional. Clients who are wowed at the reveal hesitate less and commit faster.</p>
+                        <p class="text-primary">↑ Conversion rates & homeowner confidence.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    CONTROL
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">Real-Time Team Collaboration</div>
+                        <p>Your whole team works on projects simultaneously alongside the design team and the client back-and-forth that stalls decisions. Faster collaboration means faster approvals and faster project starts.
+eliminating the</p>
+                        <p class="text-primary">↑ Efficiency & sales cycle speed.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    TEAMWORK
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">Full Plans, Specs & Estimates</div>
+                        <p>Every approved design generates complete architectural plans, material specifications, and a detailed project estimate all white-labeled. Walk into every client meeting with everything needed to close on the spot.</p>
+                        <p class="text-primary">↑ Close rates & project value.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    DELIVERABLES
+                </span>
+            </div>
+
+            <div class="py-5 flex items-center justify-between border-t border-gray-200 gap-5">
+                <div class="flex items-center gap-4">
+                    <div class="icon min-w-15 h-15 border border-primary flex items-center justify-center shrink rounded-md">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+                    <div class="con">
+                        <div class="text-md uppercase text-primary font-semibold">Designs Delivered in Days Not Months</div>
+                        <p>Al-powered speed combined with US-based architects means clients receive photorealistic renderings, specs, and plans in days. The faster they see it, the sooner they decide and the sooner you start.</p>
+                        <p class="text-primary">↑ ROI, conversion rates, sales performance & efficiency.</p>
+                    </div>
+                </div>
+                <span class="uppercase tracking-[3px] text-sm text-[#7c5369] text-nowrap">
+                    SPEED
+                </span>
+            </div>
+
+            <div class="flex items-center items-stretch flex-col md:flex-row mt-15">
+                <div class="w-full">
+                    <div class="flex items-center justify-center gap-1 text-center mb-2">
+                        Pricing:
+                    </div>
+                    <div class="mt-0 space-y-4">
+                        <div class=" flex items-center w-full">
+                            <div class="border-t border-primary/30 w-full"></div>
+                            <button class="btn text-nowrap rounded-0 min-w-[265px] text-xs">
+                                $499/month
+                            </button>
+                            <div class="border-t border-primary/30 w-full"></div>
+                        </div>
+
+                        <div class=" flex items-center w-full">
+                            <div class="border-t border-primary/30 w-full"></div>
+                            <button class="btn-outline text-nowrap rounded-0 min-w-[265px] text-xs">
+                                $5,499/year ($489 savings)
+                            </button>
+                            <div class="border-t border-primary/30 w-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-1xs w-100 flex justify-center">
+                    <div class="w-[1px] bg-primary h-full opacity-20"></div>
+                </div>
+
+                <div class="w-full mt-3 md:mt-0">
+                    <div class="flex items-center justify-center w-full mb-2">
+                        <i data-lucide="tv-minimal-play" stroke-width="1" class="w-20 h-20 text-primary"></i>
+                    </div>
+                        
+                    <div class="flex items-center w-full">
+                        <div class="border-t border-primary/30 w-full"></div>
+                        <button class="btn text-nowrap rounded-0 min-w-[265px] text-xs">
+                            Schedule Your Demo
+                        </button>
+                        <div class="border-t border-primary/30 w-full"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<footer class="p-4 py-6">
+    <div class="container max-w-7xl mx-auto flex flex-col md:flex-row gap-3 items-center justify-between">
+        <a href="javascript:void(0)"><img src="img/logo.svg" alt=""></a>
+        <div class="navbar nav-right flex items-center justify-center uppercase tracking-widest text-sm text-black flex-wrap gap-3 md:gap-6">
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">How It Works</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Demo</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Contact</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Privacy Policy</a>                    
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
