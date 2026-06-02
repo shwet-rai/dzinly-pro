@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="node_modules/flowbite/dist/flowbite.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+
+    <title>Dzinly</title>
+</head>
+
+<body class="min-h-screen">
+
+<header id="header" class="p-4 fixed w-full transition-all top-0 z-20">
+    <div class="flex justify-between">
+        <div class="logo mr-6">
+            <a class="logo-w" href="index.html"> <img src="img/logo-w.svg" alt=""> </a>
+            <a class="logo-d" href="index.html"> <img src="img/logo.svg" alt=""> </a>
+        </div>
+        <div class="menuicon flex items-center justify-center lg:hidden" 
+        data-drawer-target="drawer-mobile"
+        data-drawer-show="drawer-mobile"
+        aria-controls="drawer-mobile"> 
+            <i data-lucide="menu"></i>
+        </div>
+        <div class="hidden md:flex justify-between w-full">
+            <div class="navbar nav-left flex items-center gap-6 uppercase tracking-widest text-sm">
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a>
+            </div>
+            <div class="navbar nav-right flex items-center gap-5 uppercase tracking-widest text-sm">
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Recent</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Projects</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">FAQ's</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Sign In</a>   
+                <a href="javascript:void(0)" class="btn">Get Started</a> 
+            </div>
+        </div>
+    </div> 
+</header>
+
+<!-- Mobile Menu -->
+
+<div id="drawer-mobile" class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80" tabindex="-1" aria-labelledby="drawer-label">
+    <div class="flex items-center justify-between mb-8">
+        <a href="javascript:void(0)"> <img src="img/logo.svg" alt=""> </a>
+        <button type="button" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">✕</button>
+    </div>
+
+    <div class="py-4 overflow-y-auto">
+        <div class="navbar nav-left flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a>
+        </div>
+        <div class="border-t border-primary/30 my-4"></div>
+        <div class="navbar nav-right flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Recent</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Projects</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">FAQ's</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Sign In</a>   
+        </div>
+    </div>
+</div>
+
+
+<section class="py-20 px-4 bg-primary">
+    <div class="container max-w-7xl mx-auto">
+        <h1 class="text-white text-2xl md:text-5xl uppercase font-semibold my-4 tracking-widest md:tracking-normal text-center">
+            Create Account
+        </h1>
+    </div>
+</section>
+
+<section class="py-20 px-4 h-full">
+    <div class="container max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mx-auto flex flex-col gap-6">
+            <div class="flex items-center gap-5">
+                <div class="m-0 flex flex-col w-full">
+                    <label class="text-sm text-gray-800 mb-1" for="">First Name <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="John">
+                </div>
+                <div class="m-0 flex flex-col w-full">
+                     <label class="text-sm text-gray-800 mb-1" for="">Last Name <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="Smith">
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="m-0 flex flex-col w-full">
+                    <label class="text-sm text-gray-800 mb-1" for="">Email Address <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="johnsmith@email.com">
+                </div>
+                <div class="m-0 flex flex-col w-full">
+                     <label class="text-sm text-gray-800 mb-1" for="">Business Name <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="Firm/company name">
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="m-0 flex flex-col w-full">
+                    <label class="text-sm text-gray-800 mb-1" for="">Password <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="xxxxxxxx">
+                </div>
+                <div class="m-0 flex flex-col w-full">
+                     <label class="text-sm text-gray-800 mb-1" for="">Confirm Password <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="xxxxxxxx">
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="m-0 flex flex-col w-full">
+                    <label class="text-sm text-gray-800 mb-1" for="">Zip Code <span class="text-red-700">*</span></label>
+                    <input class="border border-gray-300 rounded-md px-4 shadow-sm placeholder:text-gray-400" type="text" placeholder="Your zip code...">
+                </div>
+                <div class="m-0 flex flex-col w-full">
+                    <label class="text-sm text-gray-800 mb-1" for="">How did you find us? <span class="text-red-700">*</span></label>
+                    <select class="border border-gray-300 rounded-md px-4 shadow-sm" aria-label="Default select example">
+                        <option selected>Choose One...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="m-0 flex flex-col w-full">
+                    <label class="text-sm text-gray-800 mb-1" for="">Which of the following applies to you? <span class="text-red-700">*</span></label>
+                    
+                    <div class="m-0 flex flex-wrap items-center gap-4 mt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label text-sm" for="inlineRadio1">Builder</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label text-sm" for="inlineRadio2">Trade</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label text-sm" for="inlineRadio3">Landscaper</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                            <label class="form-check-label text-sm" for="inlineRadio4">Architect</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                            <label class="form-check-label text-sm" for="inlineRadio5">Designer</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <button class="btn text-nowrap rounded-0 min-w-[200px] text-xs">Proceed</button>
+                <p class="text-center">Already have an account? <a class="text-primary" href="">Log in here</a></p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<footer class="p-4 py-6">
+    <div class="container max-w-7xl mx-auto flex flex-col md:flex-row gap-3 items-center justify-between">
+        <a href="javascript:void(0)"><img src="img/logo.svg" alt=""></a>
+        <div class="navbar nav-right flex items-center justify-center uppercase tracking-widest text-sm text-black flex-wrap gap-3 md:gap-6">
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">How It Works</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Demo</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Contact</a>
+            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Privacy Policy</a>                    
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
