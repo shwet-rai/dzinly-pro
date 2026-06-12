@@ -130,3 +130,7 @@ img-comparison-slider::part(handle) {
 img-comparison-slider.rendered img {
     width: 100%;
 }
+
+html {
+    scroll-behavior: smooth;
+}

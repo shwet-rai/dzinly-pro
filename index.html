@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,17 +29,17 @@
         </div>
         <div class="hidden md:flex justify-between w-full">
             <div class="navbar nav-left flex items-center gap-6 uppercase tracking-widest text-sm">
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
+                <!-- <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
                 <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a>
+                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a> -->
             </div>
             <div class="navbar nav-right flex items-center gap-5 uppercase tracking-widest text-sm">
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Recent</a>
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Projects</a>
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">FAQ's</a>
-                <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Sign In</a>   
-                <a href="javascript:void(0)" class="btn">Get Started</a> 
+                <a href="#pricing" class="opacity-70 hover:opacity-100">Pricing</a>
+                <a href="#recent" class="opacity-70 hover:opacity-100">Recent</a>
+                <a href="#projects" class="opacity-70 hover:opacity-100">Projects</a>
+                <a href="https://dzinly.com/faq" class="opacity-70 hover:opacity-100">FAQ's</a>
+                <a href="https://dzinly.com/login" class="opacity-70 hover:opacity-100">Sign In</a>   
+                <a href="#pricing" class="btn">Get Started</a> 
             </div>
         </div>
     </div> 
@@ -48,24 +48,20 @@
 <!-- Mobile Menu -->
 
 <div id="drawer-mobile" class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80" tabindex="-1" aria-labelledby="drawer-label">
-    <div class="flex items-center justify-between mb-8">
+    <div class="flex items-center justify-between mb-2">
         <a href="javascript:void(0)"> <img src="img/logo.svg" alt=""> </a>
         <button type="button" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">✕</button>
     </div>
 
     <div class="py-4 overflow-y-auto">
-        <div class="navbar nav-left flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a>
-        </div>
-        <div class="border-t border-primary/30 my-4"></div>
+        
+        <div class="border-t border-primary/30 my-4 mt-0"></div>
         <div class="navbar nav-right flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Recent</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Projects</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">FAQ's</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Sign In</a>   
+            <a href="#pricing" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Pricing</a>
+            <a href="#recent" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Recent</a>
+            <a href="#projects" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Projects</a>
+            <a href="https://dzinly.com/faq" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">FAQ's</a>
+            <a href="https://dzinly.com/login" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Sign In</a>  
         </div>
     </div>
 </div>
@@ -80,8 +76,8 @@
             <h4 class="text-white italic text-2xl md:text-5xl font-thin mb-4">Done For You.</h4>
             <div class="max-w-md mx-auto text-white px-4 text-sm md:text-base">Your clients need designs and materials. We handle both — under your brand, in days.</div>
             <div class="flex gap-4 items-center justify-center mt-6">
-                <a href="javascript:void(0)" class="btn">Packages</a>
-                <a href="javascript:void(0)" class="btn-light">How it Works</a>
+                <a href="#pricing" class="btn">Packages</a>
+                <a href="how-it-work.html" class="btn-light">How it Works</a>
             </div>
         </div>
     </div>
@@ -191,7 +187,7 @@
     </div>
 </section>
 
-<section class="py-20 px-4">
+<section id="recent" class="py-20 px-4 scroll-mt-19">
     <div class="container max-w-7xl mx-auto">
 
         <div class="mb-8">
@@ -557,7 +553,7 @@
     </div>
 </section>
 
-<section class="py-20 bg-primary-light">
+<section id="projects" class="py-20 bg-primary-light scroll-mt-19">
     <div class="container max-w-7xl mx-auto">
         <div class="flex items-center items-stretch flex-col md:flex-row px-4">
             <div class="w-full">
@@ -606,10 +602,10 @@
 
 </section>
 
-<section class="py-20 px-4">
+<section id="pricing" class="py-20 px-4 scroll-mt-19">
     <div class="container max-w-7xl mx-auto">
         <div class="flex items-center justify-center">
-            <div class="w-full text-center">
+            <div class="w-full text-center"> 
                 <div class="flex items-center justify-center gap-1">
                     <span class="bg-primary h-[1px] w-5 block"></span>
                     Pricing & Packages
@@ -671,9 +667,9 @@
                 <!-- Button -->
                 <div class="mt-10 flex items-center w-full">
                     <div class="border-t border-primary/30 w-full"></div>
-                    <button class="btn text-nowrap rounded-0 text-xs">
+                    <a href="https://dzinly.com/get-started-design-your-project" role="button" class="btn text-nowrap rounded-0 text-xs">
                     Get Started
-                    </button>
+                    </a>
                     <div class="border-t border-primary/30 w-full"></div>
                 </div>
 
@@ -752,9 +748,9 @@
 
                 <div class="mt-10 flex items-center w-full">
                     <div class="border-t border-primary/30 w-full"></div>
-                    <button class="btn text-nowrap rounded-0 text-xs">
+                    <a href="https://dzinly.com/get-started-design-your-project" role="button" class="btn text-nowrap rounded-0 text-xs">
                     Get Started
-                    </button>
+                    </a>
                     <div class="border-t border-primary/30 w-full"></div>
                 </div>
 
@@ -867,9 +863,9 @@
                 <div class="mt-10 space-y-4">
                     <div class=" flex items-center w-full">
                         <div class="border-t border-primary/30 w-full"></div>
-                        <button class="btn text-nowrap rounded-0 min-w-[215px] text-xs">
+                        <a href="http://Cal.com" role="button" class="btn text-nowrap rounded-0 min-w-[215px] text-xs">
                             Schedule Your Demo
-                        </button>
+                        </a>
                         <div class="border-t border-primary/30 w-full"></div>
                     </div>
 
@@ -938,7 +934,7 @@
         <div class="border-t border-white/30 my-8"></div>
 
         <div class="flex gap-4 items-center justify-center my-6">
-            <a href="javascript:void(0)" class="btn-light">Schedule Demo</a>
+            <a href="http://Cal.com" class="btn-light">Schedule Demo</a>
         </div>
 
         <div class="flex items-center items-stretch flex-col md:flex-row px-4">
@@ -1224,7 +1220,7 @@
                         you win more bids, delight more clients, and make more money — in weeks, not months.</p>
                 </div>
                 <div class="flex gap-4 items-center justify-center my-6">
-                    <a href="javascript:void(0)" class="btn">Schedule My Demo</a>
+                    <a href="http://Cal.com" class="btn">Schedule My Demo</a>
                 </div>
                 <p>No commitment required. See the platform live, ask every question, and decide if it's right for your business.</p>
 
@@ -1235,13 +1231,10 @@
 
 <footer class="p-4 py-6">
     <div class="container max-w-7xl mx-auto flex flex-col md:flex-row gap-3 items-center justify-between">
-        <a href="javascript:void(0)"><img src="img/logo.svg" alt=""></a>
+        <a href="/index.html"><img src="img/logo.svg" alt=""></a>
         <div class="navbar nav-right flex items-center justify-center uppercase tracking-widest text-sm text-black flex-wrap gap-3 md:gap-6">
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">How It Works</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Pricing</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Demo</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Contact</a>
-            <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Privacy Policy</a>                    
+            <a href="https://dzinly.com/contact-us" class="opacity-70 hover:opacity-100">Contact</a>
+            <a href="https://dzinly.com/privacy-policy" class="opacity-70 hover:opacity-100">Privacy Policy</a>                    
         </div>
     </div>
 </footer>
