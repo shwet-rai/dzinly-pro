@@ -134,3 +134,15 @@ img-comparison-slider.rendered img {
 html {
     scroll-behavior: smooth;
 }
+
+.swiper-navigation-icon {
+    width: 12px !important;
+    height: 12px !important;
+    fill: #6D455A !important;
+}
+.swiper-navigation-icon path{
+    fill: #6D455A !important;
+}
+:root {
+    --swiper-navigation-size: 32px !important;
+}

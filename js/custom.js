@@ -47,3 +47,23 @@
         speed: 5000,
 
     });
+
+
+    var swiper = new Swiper(".homeMakeoversSwiper", {
+        allowTouchMove: false,
+      navigation: {
+        nextEl: ".home-makeovers-n",
+        prevEl: ".home-makeovers-p",
+      },
+    });
+
+    var swiper = new Swiper(".landscapeMakeoversSwiper", {
+        allowTouchMove: false,
+      navigation: {
+        nextEl: ".landscape-makeovers-n",
+        prevEl: ".landscape-makeovers-p",
+      },
+    });
+
+
+    
