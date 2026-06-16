@@ -146,3 +146,7 @@ html {
 :root {
     --swiper-navigation-size: 32px !important;
 }
+img-comparison-slider.rendered svg {
+    cursor: col-resize !important;
+    fill: #6D455A;
+}
