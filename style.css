@@ -701,6 +701,12 @@
       border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
     }
   }
+  .selectedCell {
+    background-color: var(--color-neutral-secondary-medium);
+    .dark & {
+      background-color: var(--color-neutral-secondary-medium);
+    }
+  }
   .bg-\[\#2E2027\] {
     background-color: #2E2027;
   }
