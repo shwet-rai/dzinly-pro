@@ -193,9 +193,9 @@
         <div class="mb-8">
             <ul class="flex gap-6 justify-center flex-wrap -mb-px text-xs md:text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                 <li class="me-2" role="presentation">
-                    <button class="inline-block pb-4 border-b-2 rounded-t-lg uppercase"
-                        id="profile-tab"
-                        data-tabs-target="#profile"
+                    <button class="inline-block pb-4 border-b-2 rounded-t-lg uppercase cursor-pointer"
+                        id="home-makeovers-tab"
+                        data-tabs-target="#home-makeovers"
                         type="button"
                         role="tab"
                     >
@@ -205,9 +205,9 @@
 
                 <li class="me-2" role="presentation">
                     <button
-                        class="inline-block pb-4 border-b-2 rounded-t-lg hover:text-primary uppercase"
-                        id="dashboard-tab"
-                        data-tabs-target="#dashboard"
+                        class="inline-block pb-4 border-b-2 rounded-t-lg hover:text-primary uppercase cursor-pointer"
+                        id="landscape-makeovers-tab"
+                        data-tabs-target="#landscape-makeovers"
                         type="button"
                         role="tab"
                     >
@@ -219,15 +219,15 @@
         </div>
 
         <div id="default-tab-content">
-            <div class="hidden" id="profile" role="tabpanel">
+            <div class="hidden" id="home-makeovers" role="tabpanel">
                 <div class="relative md:px-10">
                     <div class="swiper homeMakeoversSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/home/megan-g-after.jpg">
-                                        <img slot="second" src="img/home/brittany-g-after.jpg">
+                                        <img slot="first" src="img/home-makeovers/kaitlyn-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/kaitlyn-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -252,8 +252,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/home/chris-milosevich-feformatted-before.jpg">
-                                        <img slot="second" src="img/home/chris-milosevich-feformatted-after.jpg">
+                                        <img slot="first" src="img/home-makeovers/troy-ad-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/troy-ad-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -278,8 +278,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/home/joy-hamby-main-house-brfore.jpg">
-                                        <img slot="second" src="img/home/joy-hamby-main-house-after.jpg">
+                                        <img slot="first" src="img/home-makeovers/anjuli-skirvin-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/anjuli-skirvin-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -304,8 +304,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/home/kaitlyn-lawrence-before.jpg">
-                                        <img slot="second" src="img/home/kaitlyn-lawrence-after.jpg">
+                                        <img slot="first" src="img/home-makeovers/kenzie-chew-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/kenzie-chew-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -330,8 +330,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/home/megan-g-before.jpg">
-                                        <img slot="second" src="img/home/megan-g-after.jpg">
+                                        <img slot="first" src="img/home-makeovers/denise-karry-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/denise-karry-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -352,6 +352,85 @@
                                     <div class="max-w-md mx-auto text-center">Full exterior renovation paired with cohesive landscape design.  </div>
                                 </div>
                             </div>
+
+                            <div class="swiper-slide">
+                                <div class="relative flex w-full">
+                                    <img-comparison-slider>
+                                        <img slot="first" src="img/home-makeovers/jim-d-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/jim-d-after.jpg">
+
+                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
+                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
+                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
+                                        </svg>
+                                    </img-comparison-slider>
+                                    <!-- Before Label -->
+                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                        BEFORE
+                                    </span>
+                                    <!-- After Label -->
+                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                        AFTER
+                                    </span>
+                                </div>
+                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                    <div class="max-w-md mx-auto text-center">Commercial exterior refresh with updated paint and modern curb appeal.  </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="relative flex w-full">
+                                    <img-comparison-slider>
+                                        <img slot="first" src="img/home-makeovers/image-7-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/image-7-after.jpg">
+
+                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
+                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
+                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
+                                        </svg>
+                                    </img-comparison-slider>
+                                    <!-- Before Label -->
+                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                        BEFORE
+                                    </span>
+                                    <!-- After Label -->
+                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                        AFTER
+                                    </span>
+                                </div>
+                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                    <div class="max-w-md mx-auto text-center">Renovated front entrance with updated exterior paint palette.  </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="relative flex w-full">
+                                    <img-comparison-slider>
+                                        <img slot="first" src="img/home-makeovers/tammy-geis-before.jpg">
+                                        <img slot="second" src="img/home-makeovers/tammy-geis-after.jpg">
+
+                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
+                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
+                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
+                                        </svg>
+                                    </img-comparison-slider>
+                                    <!-- Before Label -->
+                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                        BEFORE
+                                    </span>
+                                    <!-- After Label -->
+                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                        AFTER
+                                    </span>
+                                </div>
+                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                    <div class="max-w-md mx-auto text-center">Custom new build exterior design with curated materials and finishes. </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="home-makeovers-n swiper-button-next w-8 h-8 border rounded-full border-primary bg-white/70"></div>
@@ -359,15 +438,15 @@
                 </div>
             </div>
 
-            <div class="hidden" id="dashboard" role="tabpanel">
+            <div class="hidden" id="landscape-makeovers" role="tabpanel">
                 <div class="relative px-10">
                     <div class="swiper landscapeMakeoversSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/landscape/bongiovanni-front-before.jpg">
-                                        <img slot="second" src="img/landscape/bongiovanni-front-after.jpg">
+                                        <img slot="first" src="img/landscape-makeovers/bongiovanni-front-before.jpg">
+                                        <img slot="second" src="img/landscape-makeovers/bongiovanni-front-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -393,8 +472,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/landscape/bongiovanni-rear-before.jpg">
-                                        <img slot="second" src="img/landscape/bongiovanni-rear-after.jpg">
+                                        <img slot="first" src="img/landscape-makeovers/bongiovanni-rear-before.jpg">
+                                        <img slot="second" src="img/landscape-makeovers/bongiovanni-rear-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -420,8 +499,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/landscape/kathawa-before.jpg">
-                                        <img slot="second" src="img/landscape/kathawa-after.jpg">
+                                        <img slot="first" src="img/landscape-makeovers/kathawa-before.jpg">
+                                        <img slot="second" src="img/landscape-makeovers/kathawa-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -447,8 +526,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/landscape/mc-cuiston-rear-before.jpg">
-                                        <img slot="second" src="img/landscape/mc-cuiston-rear-after.jpg">
+                                        <img slot="first" src="img/landscape-makeovers/mc-cuiston-rear-before.jpg">
+                                        <img slot="second" src="img/landscape-makeovers/mc-cuiston-rear-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
@@ -475,8 +554,8 @@
                             <div class="swiper-slide">
                                 <div class="relative flex w-full">
                                     <img-comparison-slider>
-                                        <img slot="first" src="img/landscape/shah-before.jpg">
-                                        <img slot="second" src="img/landscape/shah-after.jpg">
+                                        <img slot="first" src="img/landscape-makeovers/shah-before.jpg">
+                                        <img slot="second" src="img/landscape-makeovers/shah-after.jpg">
 
                                         <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
