@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/flowbite/dist/flowbite.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
@@ -15,1527 +16,1752 @@
 
 <body class="min-h-screen">
 
-<header id="header" class="p-4 fixed w-full transition-all top-0 z-20">
-    <div class="flex justify-between">
-        <div class="logo mr-6">
-            <a class="logo-w" href="index.html"> <img src="img/logo-w.svg" alt=""> </a>
-            <a class="logo-d" href="index.html"> <img src="img/logo.svg" alt=""> </a>
-        </div>
-        <div class="menuicon flex items-center justify-center lg:hidden" 
-        data-drawer-target="drawer-mobile"
-        data-drawer-show="drawer-mobile"
-        aria-controls="drawer-mobile"> 
-            <i data-lucide="menu"></i>
-        </div>
-        <div class="hidden md:flex justify-between w-full">
-            <div class="navbar nav-left flex items-center gap-6 uppercase tracking-widest text-sm">
-                <!-- <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
+    <header id="header" class="p-4 fixed w-full transition-all top-0 z-20">
+        <div class="flex justify-between">
+            <div class="logo mr-6">
+                <a class="logo-w" href="index.html"> <img src="img/logo-w.svg" alt=""> </a>
+                <a class="logo-d" href="index.html"> <img src="img/logo.svg" alt=""> </a>
+            </div>
+            <div class="menuicon flex items-center justify-center lg:hidden" data-drawer-target="drawer-mobile"
+                data-drawer-show="drawer-mobile" aria-controls="drawer-mobile">
+                <i data-lucide="menu"></i>
+            </div>
+            <div class="hidden md:flex justify-between w-full">
+                <div class="navbar nav-left flex items-center gap-6 uppercase tracking-widest text-sm">
+                    <!-- <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Builder</a>
                 <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Trade</a>
                 <a href="javascript:void(0)" class="opacity-70 hover:opacity-100">Distributor</a> -->
-            </div>
-            <div class="navbar nav-right flex items-center gap-5 uppercase tracking-widest text-sm">
-                <a href="#pricing" class="opacity-70 hover:opacity-100">Pricing</a>
-                <a href="#recent" class="opacity-70 hover:opacity-100">Recent</a>
-                <a href="#projects" class="opacity-70 hover:opacity-100">Projects</a>
-                <a href="https://dzinly.com/faq" class="opacity-70 hover:opacity-100">FAQ's</a>
-                <a href="https://dzinly.com/login" class="opacity-70 hover:opacity-100">Sign In</a>   
-                <a href="https://dzinly.com/get-started-design-your-project" class="btn">Get Started</a> 
+                </div>
+                <div class="navbar nav-right flex items-center gap-5 uppercase tracking-widest text-sm">
+                    <a href="#pricing" class="opacity-70 hover:opacity-100">Pricing</a>
+                    <a href="#recent" class="opacity-70 hover:opacity-100">Recent</a>
+                    <a href="#projects" class="opacity-70 hover:opacity-100">Projects</a>
+                    <a href="https://dzinly.com/faq" class="opacity-70 hover:opacity-100">FAQ's</a>
+                    <a href="https://dzinly.com/login" class="opacity-70 hover:opacity-100">Sign In</a>
+                    <a href="https://dzinly.com/get-started-design-your-project" class="btn">Get Started</a>
+                </div>
             </div>
         </div>
-    </div> 
-</header>
+    </header>
 
-<!-- Mobile Menu -->
+    <!-- Mobile Menu -->
 
-<div id="drawer-mobile" class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80" tabindex="-1" aria-labelledby="drawer-label">
-    <div class="flex items-center justify-between mb-2">
-        <a href="javascript:void(0)"> <img src="img/logo.svg" alt=""> </a>
-        <button type="button" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">✕</button>
-    </div>
-
-    <div class="py-4 overflow-y-auto">
-        
-        <div class="border-t border-primary/30 my-4 mt-0"></div>
-        <div class="navbar nav-right flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
-            <a href="#pricing" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Pricing</a>
-            <a href="#recent" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Recent</a>
-            <a href="#projects" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Projects</a>
-            <a href="https://dzinly.com/faq" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">FAQ's</a>
-            <a href="https://dzinly.com/login" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">Sign In</a>  
+    <div id="drawer-mobile"
+        class="fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80"
+        tabindex="-1" aria-labelledby="drawer-label">
+        <div class="flex items-center justify-between mb-2">
+            <a href="javascript:void(0)"> <img src="img/logo.svg" alt=""> </a>
+            <button type="button" data-drawer-hide="drawer-mobile" aria-controls="drawer-mobile">✕</button>
         </div>
-    </div>
-</div>
 
+        <div class="py-4 overflow-y-auto">
 
-<section class="flex flex-col h-screen min-h-[70vh] md:min-h-screen">
-    <div class="flex items-center justify-center h-full bg-[url('img/banner.jpg')] bg-cover bg-center">
-        <div class="mx-auto flex flex-col max-w-3xl text-center px-4">
-            <!-- FIX #2: <P> → <p> lowercase -->
-            <p class="text-white uppercase font-medium opacity-70 tracking-widest text-sm md:text-base">For Home Exterior Contractors, Builders & Landscapers</p>
-            <h1 class="text-white text-2xl md:text-5xl uppercase font-semibold my-4 tracking-widest md:tracking-normal">Design. Materials. Client Approvals.</h1>
-            <h4 class="text-white italic text-2xl md:text-5xl font-thin mb-4">Done For You.</h4>
-            <div class="max-w-md mx-auto text-white px-4 text-sm md:text-base">Your clients need designs and materials. We handle both — under your brand, in days.</div>
-            <div class="flex gap-4 items-center justify-center mt-6">
-                <a href="#pricing" class="btn">Packages</a>
-                <a href="https://dzinly.com/dzinly-enterprise" class="btn-light">How it Works</a>
+            <div class="border-t border-primary/30 my-4 mt-0"></div>
+            <div class="navbar nav-right flex flex-col gap-3 uppercase tracking-widest text-sm text-black">
+                <a href="#pricing" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile"
+                    aria-controls="drawer-mobile">Pricing</a>
+                <a href="#recent" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile"
+                    aria-controls="drawer-mobile">Recent</a>
+                <a href="#projects" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile"
+                    aria-controls="drawer-mobile">Projects</a>
+                <a href="https://dzinly.com/faq" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile"
+                    aria-controls="drawer-mobile">FAQ's</a>
+                <a href="https://dzinly.com/login" class="opacity-70 hover:opacity-100" data-drawer-hide="drawer-mobile"
+                    aria-controls="drawer-mobile">Sign In</a>
             </div>
         </div>
     </div>
-    <div class="patners bg-primary-light py-4">
-        <div class="swiper logoSwiper">
-            <div class="swiper-wrapper justify-center">
 
-                <div class="swiper-slide w-auto!">
-                    <img src="img/partner2.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
 
-                <div class="swiper-slide w-auto!">
-                    <img src="img/architectural-digest.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/dbusiness.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/national-association-of-realtors.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/realtor-magazine.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/domino.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
-
-                <div class="swiper-slide w-auto!">
-                    <img src="img/midwest-living.png" class="w-auto mx-auto h-[34px]" alt="">
-                </div>
-
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-24 bg-primary-light/50 px-4">
-    <div class="container max-w-7xl mx-auto">
-        <div class="max-w-3xl mx-auto">
-            <h4 class="italic text-center text-xl md:text-4xl">Design, plans and material selection - three things every project requires, and <span class="text-primary">every contractor dreads.</span></h4>
-            
-            <div class="flex items-center justify-center gap-1 mt-5">
-                The reality of every exterior contractor
-            </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row mt-15">
-            <div class="w-full">
-                <div class="border-l-4 border-primary ps-2 mb-8">
-                    <div class="text-xl uppercase tracking-widest text-primary">Pain Point #1</div>
-                    <div class="text-2xl uppercase font-semibold text-gray-800">The Design Problem</div>
-                </div>
-                <div class="items flex flex-col gap-8">
-                    <div class="list">
-                        <div class="text-md uppercase text-primary font-semibold">The Lost Time</div>
-                        <p>You playing designer is not working. Weeks of client indecision delay project starts and erode your margin before a single dollar of work begins.</p>
-                    </div>
-                    <div class="list">
-                        <div class="text-md uppercase text-primary font-semibold">The Bottleneck</div>
-                        <p>Clients won't commit until they can see it colors, materials, landscaping. But producing that is slow, expensive, and not what you do.</p>
-                    </div>
-                    <div class="list">
-                        <div class="text-md uppercase text-primary font-semibold">The Cost</div>
-                        <p>In-house designers run $60-100K a year. Freelancers are slow and inconsistent. Most contractors wing it, and lose bids because of it.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="min-w-2xs w-100 flex justify-center">
-                <div class="w-[1px] bg-primary h-full opacity-10"></div>
-            </div>
-
-            <div class="w-full">
-                <div class="border-l-4 border-primary ps-2 mb-8">
-                    <div class="text-xl uppercase tracking-widest text-primary">Pain Point #1</div>
-                    <div class="text-2xl uppercase font-semibold text-gray-800">The Material Selection Problem</div>
-                </div>
-                <div class="items flex flex-col gap-8">
-                    <div class="list">
-                        <div class="text-md uppercase text-primary font-semibold">The Guesswork</div>
-                        <p>Clients pick colors from a 2-inch chip and siding from a single sample. They can't picture it on their home which delays decisions.</p>
-                    </div>
-                    <div class="list">
-                        <div class="text-md uppercase text-primary font-semibold">Stalled Starts & Missed Upsells</div>
-                        <p>Without the eye of a professional designer, clients have no idea what materials will truly work best together.</p>
-                    </div>
-                    <div class="list">
-                        <div class="text-md uppercase text-primary font-semibold">The Change Order Trap</div>
-                        <p>Material regret after installation means change orders, re-orders, and unhappy clients. It destroys both your margins and your reputation.</p>
-                    </div>
+    <section class="flex flex-col h-screen min-h-[70vh] md:min-h-screen">
+        <div class="flex items-center justify-center h-full bg-[url('img/banner.jpg')] bg-cover bg-center">
+            <div class="mx-auto flex flex-col max-w-3xl text-center px-4">
+                <!-- FIX #2: <P> → <p> lowercase -->
+                <p class="text-white uppercase font-medium opacity-70 tracking-widest text-sm md:text-base">For Home
+                    Exterior Contractors, Builders & Landscapers</p>
+                <h1
+                    class="text-white text-2xl md:text-5xl uppercase font-semibold my-4 tracking-widest md:tracking-normal">
+                    Design. Materials. Client Approvals.</h1>
+                <h4 class="text-white italic text-2xl md:text-5xl font-thin mb-4">Done For You.</h4>
+                <div class="max-w-md mx-auto text-white px-4 text-sm md:text-base">Your clients need designs and
+                    materials. We handle both — under your brand, in days.</div>
+                <div class="flex gap-4 items-center justify-center mt-6">
+                    <a href="#pricing" class="btn">Packages</a>
+                    <a href="https://dzinly.com/dzinly-enterprise" class="btn-light">How it Works</a>
                 </div>
             </div>
         </div>
+        <div class="patners bg-primary-light py-4">
+            <div class="swiper logoSwiper">
+                <div class="swiper-wrapper justify-center">
 
-        <div class="mt-5 md:mt-10 bg-primary-light p-5 rounded-xl">
-            <div class="max-w-5xl text-center mx-auto">
-                DZINLY Pro solves both by giving you the plans and specs you need and your clients designer endorsed, photorealistic renderings of their home's design and materials, so they commit with confidence, change their minds less, and say yes to more.
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/partner2.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/architectural-digest.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/dbusiness.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/national-association-of-realtors.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/realtor-magazine.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/domino.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+                    <div class="swiper-slide w-auto!">
+                        <img src="img/midwest-living.png" class="w-auto mx-auto h-[34px]" alt="">
+                    </div>
+
+
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <section class="py-24 bg-primary-light/50 px-4">
+        <div class="container max-w-7xl mx-auto">
+            <div class="max-w-3xl mx-auto">
+                <h4 class="italic text-center text-xl md:text-4xl">Design, plans and material selection - three things
+                    every project requires, and <span class="text-primary">every contractor dreads.</span></h4>
 
-<section id="recent" class="py-20 px-4 scroll-mt-19">
-    <div class="container max-w-7xl mx-auto">
+                <div class="flex items-center justify-center gap-1 mt-5">
+                    The reality of every exterior contractor
+                </div>
+            </div>
 
-        <div class="mb-8">
-            <ul class="flex gap-6 justify-center flex-wrap -mb-px text-xs md:text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-                <li class="me-2" role="presentation">
-                    <button class="inline-block pb-4 border-b-2 rounded-t-lg uppercase cursor-pointer"
-                        id="home-makeovers-tab"
-                        data-tabs-target="#home-makeovers"
-                        type="button"
-                        role="tab"
-                    >
-                        Home Makeovers
-                    </button>
-                </li>
-
-                <li class="me-2" role="presentation">
-                    <button
-                        class="inline-block pb-4 border-b-2 rounded-t-lg hover:text-primary uppercase cursor-pointer"
-                        id="landscape-makeovers-tab"
-                        data-tabs-target="#landscape-makeovers"
-                        type="button"
-                        role="tab"
-                    >
-                        Landscape Makeovers
-                    </button>
-                </li>
-
-            </ul>
-        </div>
-
-        <div id="default-tab-content">
-            <div class="hidden" id="home-makeovers" role="tabpanel">
-                <div class="relative md:px-10">
-                    <div class="swiper homeMakeoversSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/kaitlyn-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/kaitlyn-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Full exterior transformation featuring a custom-designed portico entrance.</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/troy-ad-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/troy-ad-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Complete exterior remodel with professionally designed landscaping.</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/anjuli-skirvin-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/anjuli-skirvin-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Exterior renovation featuring a redesigned entrance and added dormers.</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/kenzie-chew-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/kenzie-chew-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Complete exterior transformation with updated materials and architectural detailing.</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/denise-karry-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/denise-karry-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Full exterior renovation paired with cohesive landscape design.  </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/jim-d-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/jim-d-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Commercial exterior refresh with updated paint and modern curb appeal.  </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/image-7-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/image-7-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Renovated front entrance with updated exterior paint palette.  </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/home-makeovers/tammy-geis-before.jpg">
-                                        <img slot="second" src="img/home-makeovers/tammy-geis-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Custom new build exterior design with curated materials and finishes. </div>
-                                </div>
-                            </div>
-
+            <div class="flex flex-col md:flex-row mt-15">
+                <div class="w-full">
+                    <div class="border-l-4 border-primary ps-2 mb-8">
+                        <div class="text-xl uppercase tracking-widest text-primary">Pain Point #1</div>
+                        <div class="text-2xl uppercase font-semibold text-gray-800">The Design Problem</div>
+                    </div>
+                    <div class="items flex flex-col gap-8">
+                        <div class="list">
+                            <div class="text-md uppercase text-primary font-semibold">The Lost Time</div>
+                            <p>You playing designer is not working. Weeks of client indecision delay project starts and
+                                erode your margin before a single dollar of work begins.</p>
+                        </div>
+                        <div class="list">
+                            <div class="text-md uppercase text-primary font-semibold">The Bottleneck</div>
+                            <p>Clients won't commit until they can see it colors, materials, landscaping. But producing
+                                that is slow, expensive, and not what you do.</p>
+                        </div>
+                        <div class="list">
+                            <div class="text-md uppercase text-primary font-semibold">The Cost</div>
+                            <p>In-house designers run $60-100K a year. Freelancers are slow and inconsistent. Most
+                                contractors wing it, and lose bids because of it.</p>
                         </div>
                     </div>
-                    <div class="home-makeovers-n swiper-button-next w-8 h-8 border rounded-full border-primary bg-white/70"></div>
-                    <div class="home-makeovers-p swiper-button-prev w-8 h-8 border rounded-full border-primary bg-white/70"></div>
+                </div>
+
+                <div class="min-w-2xs w-100 flex justify-center">
+                    <div class="w-[1px] bg-primary h-full opacity-10"></div>
+                </div>
+
+                <div class="w-full">
+                    <div class="border-l-4 border-primary ps-2 mb-8">
+                        <div class="text-xl uppercase tracking-widest text-primary">Pain Point #1</div>
+                        <div class="text-2xl uppercase font-semibold text-gray-800">The Material Selection Problem</div>
+                    </div>
+                    <div class="items flex flex-col gap-8">
+                        <div class="list">
+                            <div class="text-md uppercase text-primary font-semibold">The Guesswork</div>
+                            <p>Clients pick colors from a 2-inch chip and siding from a single sample. They can't
+                                picture it on their home which delays decisions.</p>
+                        </div>
+                        <div class="list">
+                            <div class="text-md uppercase text-primary font-semibold">Stalled Starts & Missed Upsells
+                            </div>
+                            <p>Without the eye of a professional designer, clients have no idea what materials will
+                                truly work best together.</p>
+                        </div>
+                        <div class="list">
+                            <div class="text-md uppercase text-primary font-semibold">The Change Order Trap</div>
+                            <p>Material regret after installation means change orders, re-orders, and unhappy clients.
+                                It destroys both your margins and your reputation.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="hidden" id="landscape-makeovers" role="tabpanel">
-                <div class="relative px-10">
-                    <div class="swiper landscapeMakeoversSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/landscape-makeovers/bongiovanni-front-before.jpg">
-                                        <img slot="second" src="img/landscape-makeovers/bongiovanni-front-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Commercial exterior refresh with updated paint and modern curb appeal.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/landscape-makeovers/bongiovanni-rear-before.jpg">
-                                        <img slot="second" src="img/landscape-makeovers/bongiovanni-rear-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Renovated front entrance with updated exterior paint palette.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/landscape-makeovers/kathawa-before.jpg">
-                                        <img slot="second" src="img/landscape-makeovers/kathawa-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Custom new build exterior design with curated materials and finishes.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/landscape-makeovers/mc-cuiston-rear-before.jpg">
-                                        <img slot="second" src="img/landscape-makeovers/mc-cuiston-rear-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Same home. New colors, materials & architectural 
-                                        details — every option visualized before a single product is ordered.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="relative flex w-full">
-                                    <img-comparison-slider>
-                                        <img slot="first" src="img/landscape-makeovers/shah-before.jpg">
-                                        <img slot="second" src="img/landscape-makeovers/shah-after.jpg">
-
-                                        <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2"/>
-                                            <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white"/>
-                                            <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white"/>
-                                        </svg>
-                                    </img-comparison-slider>
-                                    <!-- Before Label -->
-                                    <span class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        BEFORE
-                                    </span>
-                                    <!-- After Label -->
-                                    <span class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
-                                        AFTER
-                                    </span>
-                                </div>
-                                <div class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
-                                    <div class="max-w-md mx-auto text-center">Same home. New colors, materials & architectural 
-                                        details — every option visualized before a single product is ordered.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="landscape-makeovers-n swiper-button-next w-8 h-8 border rounded-full border-primary bg-white/70"></div>
-                    <div class="landscape-makeovers-p swiper-button-prev w-8 h-8 border rounded-full border-primary bg-white/70"></div>
+            <div class="mt-5 md:mt-10 bg-primary-light p-5 rounded-xl">
+                <div class="max-w-5xl text-center mx-auto">
+                    DZINLY Pro solves both by giving you the plans and specs you need and your clients designer
+                    endorsed, photorealistic renderings of their home's design and materials, so they commit with
+                    confidence, change their minds less, and say yes to more.
                 </div>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
+    <section id="recent" class="py-20 px-4 scroll-mt-19">
+        <div class="container max-w-7xl mx-auto">
 
-<section class="py-20 px-4 bg-primary-light">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center items-stretch flex-col md:flex-row">
-            <div class="w-full">
-                <div class="flex items-center gap-1">
-                    The Solution
-                </div>
-                <h4 class="text-2xl md:text-4xl font-semibold py-1">Your Own Design Team.</h4>
-                <h5 class="italic text-2xl text-primary">Under Your Name.</h5>
+            <div class="mb-8">
+                <ul class="flex gap-6 justify-center flex-wrap -mb-px text-xs md:text-sm font-medium text-center"
+                    id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block pb-4 border-b-2 rounded-t-lg uppercase cursor-pointer"
+                            id="home-makeovers-tab" data-tabs-target="#home-makeovers" type="button" role="tab">
+                            Home Makeovers
+                        </button>
+                    </li>
+
+                    <li class="me-2" role="presentation">
+                        <button
+                            class="inline-block pb-4 border-b-2 rounded-t-lg hover:text-primary uppercase cursor-pointer"
+                            id="landscape-makeovers-tab" data-tabs-target="#landscape-makeovers" type="button"
+                            role="tab">
+                            Landscape Makeovers
+                        </button>
+                    </li>
+
+                </ul>
             </div>
 
-            <!--<div class="min-w-2xs w-100 flex justify-center">
+            <div id="default-tab-content">
+                <div class="hidden" id="home-makeovers" role="tabpanel">
+                    <div class="relative md:px-10">
+                        <div class="swiper homeMakeoversSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/kaitlyn-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/kaitlyn-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Full exterior transformation featuring
+                                            a custom-designed portico entrance.</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/troy-ad-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/troy-ad-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Complete exterior remodel with
+                                            professionally designed landscaping.</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/anjuli-skirvin-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/anjuli-skirvin-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Exterior renovation featuring a
+                                            redesigned entrance and added dormers.</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/kenzie-chew-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/kenzie-chew-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Complete exterior transformation with
+                                            updated materials and architectural detailing.</div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/denise-karry-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/denise-karry-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Full exterior renovation paired with
+                                            cohesive landscape design. </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/jim-d-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/jim-d-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Commercial exterior refresh with
+                                            updated paint and modern curb appeal. </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/image-7-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/image-7-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Renovated front entrance with updated
+                                            exterior paint palette. </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/home-makeovers/tammy-geis-before.jpg">
+                                            <img slot="second" src="img/home-makeovers/tammy-geis-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Custom new build exterior design with
+                                            curated materials and finishes. </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div
+                            class="home-makeovers-n swiper-button-next w-8 h-8 border rounded-full border-primary bg-white/70">
+                        </div>
+                        <div
+                            class="home-makeovers-p swiper-button-prev w-8 h-8 border rounded-full border-primary bg-white/70">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden" id="landscape-makeovers" role="tabpanel">
+                    <div class="relative px-10">
+                        <div class="swiper landscapeMakeoversSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first"
+                                                src="img/landscape-makeovers/bongiovanni-front-before.jpg">
+                                            <img slot="second"
+                                                src="img/landscape-makeovers/bongiovanni-front-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Commercial exterior refresh with
+                                            updated paint and modern curb appeal.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/landscape-makeovers/bongiovanni-rear-before.jpg">
+                                            <img slot="second" src="img/landscape-makeovers/bongiovanni-rear-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Renovated front entrance with updated
+                                            exterior paint palette.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/landscape-makeovers/kathawa-before.jpg">
+                                            <img slot="second" src="img/landscape-makeovers/kathawa-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Custom new build exterior design with
+                                            curated materials and finishes.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/landscape-makeovers/mc-cuiston-rear-before.jpg">
+                                            <img slot="second" src="img/landscape-makeovers/mc-cuiston-rear-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Same home. New colors, materials &
+                                            architectural
+                                            details — every option visualized before a single product is ordered.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="relative flex w-full">
+                                        <img-comparison-slider>
+                                            <img slot="first" src="img/landscape-makeovers/shah-before.jpg">
+                                            <img slot="second" src="img/landscape-makeovers/shah-after.jpg">
+
+                                            <svg slot="handle" width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="17.5" cy="17.5" r="16.5" stroke="white" stroke-width="2" />
+                                                <path d="M26 17.1176L19 11V24L26 17.1176Z" fill="white" />
+                                                <path d="M8 17.1176L15 11V24L8 17.1176Z" fill="white" />
+                                            </svg>
+                                        </img-comparison-slider>
+                                        <!-- Before Label -->
+                                        <span
+                                            class="absolute bottom-4 left-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            BEFORE
+                                        </span>
+                                        <!-- After Label -->
+                                        <span
+                                            class="absolute bottom-4 right-4 bg-white/70 text-primary px-3 py-1 uppercase text-sm font-semibold pointer-events-none z-10">
+                                            AFTER
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-primary py-2 px-2 md:px-12 text-white text-xs md:text-sm min-h-14 flex flex-col justify-center">
+                                        <div class="max-w-md mx-auto text-center">Same home. New colors, materials &
+                                            architectural
+                                            details — every option visualized before a single product is ordered.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="landscape-makeovers-n swiper-button-next w-8 h-8 border rounded-full border-primary bg-white/70">
+                        </div>
+                        <div
+                            class="landscape-makeovers-p swiper-button-prev w-8 h-8 border rounded-full border-primary bg-white/70">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 px-4 bg-primary-light">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center items-stretch flex-col md:flex-row">
+                <div class="w-full">
+                    <div class="flex items-center gap-1">
+                        The Solution
+                    </div>
+                    <h4 class="text-2xl md:text-4xl font-semibold py-1">Your Own Design Team.</h4>
+                    <h5 class="italic text-2xl text-primary">Under Your Name.</h5>
+                </div>
+
+                <!--<div class="min-w-2xs w-100 flex justify-center">
                 <div class="w-[1px] bg-primary h-full opacity-20"></div>
             </div>-->
 
-            <!--<div class="w-full mt-3 md:mt-0">
+                <!--<div class="w-full mt-3 md:mt-0">
                 <p class="text-md md:text-2xl">DZINLY solves both, — giving your clients designer-endorsed, photorealistic renderings of their home's design and materials, so they commit with confidence, change their minds less, and say yes to more.</p>
             </div>-->
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
-            <!-- CARD 01 -->
-            <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
-                <!-- Number -->
-                <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
-                01
-                </h2>
-
-                <!-- Icon -->
-                <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                    <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
-                </div>
-
-                <!-- Content -->
-                <div class="relative z-10">
-                <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
-                   WHITE-LABELED EVERYTHING
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-                   Your clients never see our name. Your logo, your colors, your brand - on every rendering, plan, spec sheet, portal and client communication.
-                </p>
-
-                </div>
-
-            </div>
-            <!-- CARD 02 -->
-            <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
-
-                <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
-                02
-                </h2>
-
-                <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="brain" stroke-width="1" class="w-10 h-10"></i>
-                </div>
-
-                <div class="relative z-10">
-                <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
-                    AI + REAL DESIGNERS
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-                    Our Al platform accelerates the work. Our US -based architects and designers perfect it. Clients get photorealistic exterior renderings, detailed material specifications, and complete architectural plan - in days, not months.
-                </p>
-                </div>
-
-            </div>
-            <!-- CARD 03 -->
-            <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
-
-                <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
-                03
-                </h2>
-
-                <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="sparkles" stroke-width="1" class="w-10 h-10"></i>
-                </div>
-
-                <div class="relative z-10">
-                <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
-                    LIVE CLIENT COLLABORATION
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-                    Clients toggle through color schemes, materials, and landscaping options in real time. They interact directly with your white-labeled design team inside your beautiful, branded portal.
-                </p>
-                </div>
-
-            </div>
-            <!-- CARD 04 -->
-            <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
-
-                <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
-                04
-                </h2>
-
-                <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="list-checks" stroke-width="1" class="w-10 h-10"></i>
-                </div>
-
-                <div class="relative z-10">
-                <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
-                    Full Plans & Specs
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-                   When a design is approved, the system generates complete plans, material specifications, and estimates - ready to pull permits and start work.
-                </p>
-                </div>
-
-            </div>
-            <!-- CARD 05 -->
-            <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
-
-                <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
-                05
-                </h2>
-
-                <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="users" stroke-width="1" class="w-10 h-10"></i>
-                </div>
-
-                <div class="relative z-10">
-                <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
-                    Multi-User & Real-Time
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-                    Multiple team members from your company can collaborate on a project simultaneously -alongside your clients and your design team all in one place. Enterprise Only.
-                </p>
-                </div>
-
-            </div>
-            <!-- CARD 06 -->
-            <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
-
-                <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
-                06
-                </h2>
-
-                <div class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
-                <i data-lucide="house-plus" stroke-width="1" class="w-10 h-10"></i>
-                </div>
-
-                <div class="relative z-10">
-                <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
-                    Embedded Into Your Site
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-                    Launch a fully branded design portal directly inside your existing website. Clients can start a project on their own you focus on doing the work.
-                </p>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="py-20 px-4">
-    <div class="container max-w-7xl mx-auto">
-
-        <div class="flex items-center items-stretch flex-col md:flex-row">
-            <div class="w-full">
-                <div class="flex items-center gap-1">
-                    How It Works
-                </div>
-                <h4 class="text-2xl md:text-4xl font-semibold py-1">From Client <br>Conversation to Signed Contract</h4>
-                <h5 class="italic text-2xl text-primary">In Days.</h5>
             </div>
 
-            <div class="min-w-2xs w-100 flex justify-center">
-                <div class="w-[1px] bg-primary h-full opacity-20"></div>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+                <!-- CARD 01 -->
+                <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
+                    <!-- Number -->
+                    <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
+                        01
+                    </h2>
 
-            <div class="w-full flex flex-col items-center justify-center  mt-3 md:mt-0">
-                <p class="md:text-2xl">A streamlined workflow designed around how contractors actually operate.</p>
-            </div>
-        </div>
+                    <!-- Icon -->
+                    <div
+                        class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
+                        <i data-lucide="monitor" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
-            <div class="bg-primary-light p-10">
-                <div class="text-primary uppercase text-lg font-medium">
-                    Initiate
-                </div>
-                <h3 class="text-black text-2xl font-semibold">
-                    You or Your Client Starts a Project
-                </h3>
-                <div class="my-4">
-                    <img class="w-full" src="img/initiate.jpg" alt="">
-                </div>
-                <p>Launch a project from your dashboard - or let your client initiate it themselves through your white-labeled portal. They provide property photos, style preferences, and priorities. You stay focused on the work.</p>
-            </div>
+                    <!-- Content -->
+                    <div class="relative z-10">
+                        <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
+                            WHITE-LABELED EVERYTHING
+                        </h3>
 
-            <div class="bg-primary-light p-10">
-                <div class="text-primary uppercase text-lg font-medium">
-                    Design
-                </div>
-                <h3 class="text-black text-2xl font-semibold">
-                    Your AI-Powered Design Team Gets to Work
-                </h3>
-                <div class="my-4">
-                    <img class="w-full" src="img/design.jpg" alt="">
-                </div>
-                <p>Our Al platform and US design team develop exterior designs, color renderings, material selections, and landscape concepts. Clients can explore options, compare ideas, and collaborate in real time, all within your branded experience.</p>
-            </div>
+                        <p class="text-gray-600 leading-7">
+                            Your clients never see our name. Your logo, your colors, your brand - on every rendering,
+                            plan, spec sheet, portal and client communication.
+                        </p>
 
-            <div class="bg-primary-light p-10">
-                <div class="text-primary uppercase text-lg font-medium">
-                    Refine
-                </div>
-                <h3 class="text-black text-2xl font-semibold">
-                    Client Explores, Compares & Decides
-                </h3>
-                <div class="my-4">
-                    <img class="w-full" src="img/refine.jpg" alt="">
-                </div>
-                <p>Clients browse material swaps, additional rendering options, and upsell services with your margin on top. Every interaction builds excitement and accelerates their commitment.</p>
-            </div>
+                    </div>
 
-            <div class="bg-primary-light p-10">
-                <div class="text-primary uppercase text-lg font-medium">
-                    Deliver
                 </div>
-                <h3 class="text-black text-2xl font-semibold">
-                    Full Plans, Specs & Estimates — Ready to Go
-                </h3>
-                <div class="my-4">
-                    <img class="w-full" src="img/deliver.jpg" alt="">
+                <!-- CARD 02 -->
+                <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
+
+                    <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
+                        02
+                    </h2>
+
+                    <div
+                        class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
+                        <i data-lucide="brain" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
+                            AI + REAL DESIGNERS
+                        </h3>
+
+                        <p class="text-gray-600 leading-7">
+                            Our Al platform accelerates the work. Our US -based architects and designers perfect it.
+                            Clients get photorealistic exterior renderings, detailed material specifications, and
+                            complete architectural plan - in days, not months.
+                        </p>
+                    </div>
+
                 </div>
-                <p>Once approved, you receive complete architectural plans, material specifications, and a detailed estimate all white-labeled and ready to execute. Your client is aligned, excited, and ready to move forward.</p>
+                <!-- CARD 03 -->
+                <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
+
+                    <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
+                        03
+                    </h2>
+
+                    <div
+                        class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
+                        <i data-lucide="sparkles" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
+                            LIVE CLIENT COLLABORATION
+                        </h3>
+
+                        <p class="text-gray-600 leading-7">
+                            Clients toggle through color schemes, materials, and landscaping options in real time. They
+                            interact directly with your white-labeled design team inside your beautiful, branded portal.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- CARD 04 -->
+                <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
+
+                    <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
+                        04
+                    </h2>
+
+                    <div
+                        class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
+                        <i data-lucide="list-checks" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
+                            Full Plans & Specs
+                        </h3>
+
+                        <p class="text-gray-600 leading-7">
+                            When a design is approved, the system generates complete plans, material specifications, and
+                            estimates - ready to pull permits and start work.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- CARD 05 -->
+                <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
+
+                    <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
+                        05
+                    </h2>
+
+                    <div
+                        class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
+                        <i data-lucide="users" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
+                            Multi-User & Real-Time
+                        </h3>
+
+                        <p class="text-gray-600 leading-7">
+                            Multiple team members from your company can collaborate on a project simultaneously
+                            -alongside your clients and your design team all in one place. Enterprise Only.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- CARD 06 -->
+                <div class="relative bg-white rounded-3xl p-8 overflow-hidden min-h-[280px]">
+
+                    <h2 class="absolute top-6 right-6 text-[90px] leading-none font-light text-[#f1ebee]">
+                        06
+                    </h2>
+
+                    <div
+                        class="w-20 h-20 rounded-xl bg-[#734b63] text-white flex items-center justify-center mb-7 relative z-10">
+                        <i data-lucide="house-plus" stroke-width="1" class="w-10 h-10"></i>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-primary uppercase tracking-wider text-lg font-semibold mb-2">
+                            Embedded Into Your Site
+                        </h3>
+
+                        <p class="text-gray-600 leading-7">
+                            Launch a fully branded design portal directly inside your existing website. Clients can
+                            start a project on their own you focus on doing the work.
+                        </p>
+                    </div>
+
+                </div>
             </div>
 
         </div>
+    </section>
 
-    </div>
-</section>
+    <section class="py-20 px-4">
+        <div class="container max-w-7xl mx-auto">
 
-<section id="projects" class="py-20 bg-primary-light scroll-mt-19">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center items-stretch flex-col md:flex-row px-4">
-            <div class="w-full">
-                <div class="flex items-center gap-1">
-                    Our Work
-                </div>
-                <h4 class="text-2xl md:text-4xl font-semibold">Exteriors</h4>
-                <h5 class="italic text-2xl text-primary">Transformed.</h5>
-            </div>
-
-            <div class="min-w-2xs w-100 flex justify-center">
-                <div class="w-[1px] bg-primary h-full opacity-20"></div>
-            </div>
-
-            <div class="w-full flex flex-col items-center justify-center mt-3 md:mt-0">
-                <p class="md:text-2xl">Every project began as a simple photo -submitted by a contractor, designed by our team, and approved by the homeowner in days.</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
-            <div class="w-full">
-                <img src="img/example_01.jpg" alt="">
-            </div>
-            <div class="w-full">
-                <img src="img/example_02.jpg" alt="">
-            </div>
-            <div class="w-full">
-                <img src="img/example_03.jpg" alt="">
-            </div>
-        </div>
-
-    </div>
-
-    
-
-</section>
-
-<section id="pricing" class="py-20 px-4 scroll-mt-19">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center justify-center">
-            <div class="w-full text-center"> 
-                <div class="flex items-center justify-center gap-1 uppercase text-primary tracking-[3px] font-semibold">
-                    Pricing & Packages
-                </div>
-                <h4 class="text-4xl py-2">Renderings, plans & presentations.</h4>
-                <h5 class="italic text-4xl text-primary">One team.</h5>
-
-                <div class="max-w-xl mx-auto my-5">
-                    <p>Everything your projects need before the first shovel - from US-based designers and architects, accelerated by Al, and delivered entirely under your brand.</p>
-                </div>
-                <div class="flex items-center justify-center">
-                	<p class="flex items-center bg-primary text-white py-2 px-5 rounded-full text-base/6 text-xs gap-2"><i data-lucide="tag" class="w-3 h-3"></i> White-labeled on every plan. Enterprise removes our name entirely.</p>
-                </div>
-            </div>
-        </div>
-
-		<div class="grid grid-cols-1 lg:grid-cols-4 mt-5 gap-6">
-        	<div class="rounded-xl p-6 min-h-24 border border-primary/30">
-            	<div class="flex flex-col gap-2">
-                	<div class="icon text-primary"><i data-lucide="image" class="w-5 h-5"></i></div>
-                    <div class="con">
-                    	<div class="text-primary font-semibold">Photorealistic renderings</div>
-                        <p>Exteriors and landscapes, shown on the client's own home.</p>
-                    </div>
-                    <div class="flex items-center gap-1 mt-12">
-                    	<a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i data-lucide="tag" class="w-3 h-3"></i> See an example</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded-xl p-6 min-h-24 border border-primary/30">
-            	<div class="flex flex-col gap-2">
-                	<div class="icon"><i data-lucide="layout-grid" class="w-5 h-5"></i></div>
-                    <div class="con">
-                    	<div class="text-primary font-semibold">Photorealistic renderings</div>
-                        <p>Exteriors and landscapes, shown on the client's own home.</p>
-                    </div>
-                    <div class="flex items-center gap-1  mt-12">
-                    	<a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i data-lucide="tag" class="w-3 h-3"></i> See an example</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded-xl p-6 min-h-24 border border-primary/30">
-            	<div class="flex flex-col gap-2">
-                	<div class="icon"><i data-lucide="table-cells-split" class="w-5 h-5"></i></div>
-                    <div class="con">
-                    	<div class="text-primary font-semibold">Photorealistic renderings</div>
-                        <p>Exteriors and landscapes, shown on the client's own home.</p>
-                    </div>
-                    <div class="flex items-center gap-1  mt-12">
-                    	<a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i data-lucide="tag" class="w-3 h-3"></i> See an example</a>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded-xl p-6 min-h-24 border border-primary/30">
-            	<div class="flex flex-col gap-2">
-                	<div class="icon"><i data-lucide="file-chart-line" class="w-5 h-5"></i></div>
-                    <div class="con">
-                    	<div class="text-primary font-semibold">Photorealistic renderings</div>
-                        <p>Exteriors and landscapes, shown on the client's own home.</p>
-                    </div>
-                    <div class="flex items-center gap-1  mt-12">
-                    	<a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i data-lucide="tag" class="w-3 h-3"></i> See an example</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-3 mt-5">
-            <!-- CARD 01 -->
-            <div class="bg-stone-50 p-10 flex flex-col justify-between">
+            <div class="flex items-center items-stretch flex-col md:flex-row">
                 <div class="w-full">
-                    <span class="uppercase tracking-[3px] text-sm text-black flex items-center gap-2 font-semibold"><span class="w-2 h-2 bg-black flex rounded-full"></span> ONE-TIME PROJECT</span>
-                    <span class="uppercase tracking-[3px] text-sm text-[#7c5369] block font-semibold mt-2">Starter</span>
-                    <h2 class="heading-font text-xl leading-none text-black font-semibold tracking-wider mt-2 uppercase text-primary">A La Carte</h2>
-                    <p class="mt-6 text-gray-600 leading-7">
-                        For professionals who just need one project done no membership, pick your level of involvement.
-                    </p>
-
-                    <span class="uppercase tracking-[3px] text-sm text-[#7c5369] block font-semibold mt-6">DO-IT-YOURSELF</span>
-                    <p class="text-gray-600 leading-7 mt-2">
-                        You specify the colors, materials, and style you want to see on a home or landscape. We render it.
-                    </p>
-
-                    <!-- Price -->
-                    <div class="mt-3 mb-4 flex items-end gap-2">
-                        <div class="flex items-center">
-                            <h5 class="text-primary text-3xl mt-3">$</h5>
-                            <h3 class="heading-font text-[64px] font-semibold leading-none text-primary">99</h3>
-                        </div>
-                        <div class="pt-5">
-                            <p class="text-primary text-lg">/ project</p>
-                        </div>
+                    <div class="flex items-center gap-1">
+                        How It Works
                     </div>
-
-
-                    <a href="https://dzinly.com/get-started-design-your-project" role="button" class="btn-outline text-nowrap rounded-0 text-xs block text-center">
-                        Get Started
-                    </a>
-
-                    <div class="border-t border-primary/30 my-8"></div>
-
-                    <span class="uppercase tracking-[3px] text-sm text-[#7c5369] block font-semibold mt-6">DESIGNER ASSISTED</span>
-                    <p class="text-gray-600 leading-7 mt-2">
-                        A US-based professional designer builds the concept with you-colors, materials, and landscape guidance included.
-                    </p>
-
-                    <div class="mt-3 mb-4 flex items-end gap-2">
-                        
-                        <div class="flex items-center">
-                            <h5 class="text-primary text-3xl mt-3">$</h5>
-                            <h3 class="heading-font text-[64px] font-semibold leading-none text-primary">229</h3>
-                        </div>
-                        <div class="pt-5">
-                            <p class="text-primary text-lg">/ project</p>
-                        </div>
-                    </div>
+                    <h4 class="text-2xl md:text-4xl font-semibold py-1">From Client <br>Conversation to Signed Contract
+                    </h4>
+                    <h5 class="italic text-2xl text-primary">In Days.</h5>
                 </div>
-                <!-- Button -->
-                <div class="mt-2 flex items-center w-full">
-                    <a href="https://dzinly.com/get-started-design-your-project" role="button" class="btn text-nowrap rounded-0 text-xs block w-full text-center">
-                    Get Started
-                    </a>
+
+                <div class="min-w-2xs w-100 flex justify-center">
+                    <div class="w-[1px] bg-primary h-full opacity-20"></div>
+                </div>
+
+                <div class="w-full flex flex-col items-center justify-center  mt-3 md:mt-0">
+                    <p class="md:text-2xl">A streamlined workflow designed around how contractors actually operate.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+                <div class="bg-primary-light p-10">
+                    <div class="text-primary uppercase text-lg font-medium">
+                        Initiate
+                    </div>
+                    <h3 class="text-black text-2xl font-semibold">
+                        You or Your Client Starts a Project
+                    </h3>
+                    <div class="my-4">
+                        <img class="w-full" src="img/initiate.jpg" alt="">
+                    </div>
+                    <p>Launch a project from your dashboard - or let your client initiate it themselves through your
+                        white-labeled portal. They provide property photos, style preferences, and priorities. You stay
+                        focused on the work.</p>
+                </div>
+
+                <div class="bg-primary-light p-10">
+                    <div class="text-primary uppercase text-lg font-medium">
+                        Design
+                    </div>
+                    <h3 class="text-black text-2xl font-semibold">
+                        Your AI-Powered Design Team Gets to Work
+                    </h3>
+                    <div class="my-4">
+                        <img class="w-full" src="img/design.jpg" alt="">
+                    </div>
+                    <p>Our Al platform and US design team develop exterior designs, color renderings, material
+                        selections, and landscape concepts. Clients can explore options, compare ideas, and collaborate
+                        in real time, all within your branded experience.</p>
+                </div>
+
+                <div class="bg-primary-light p-10">
+                    <div class="text-primary uppercase text-lg font-medium">
+                        Refine
+                    </div>
+                    <h3 class="text-black text-2xl font-semibold">
+                        Client Explores, Compares & Decides
+                    </h3>
+                    <div class="my-4">
+                        <img class="w-full" src="img/refine.jpg" alt="">
+                    </div>
+                    <p>Clients browse material swaps, additional rendering options, and upsell services with your margin
+                        on top. Every interaction builds excitement and accelerates their commitment.</p>
+                </div>
+
+                <div class="bg-primary-light p-10">
+                    <div class="text-primary uppercase text-lg font-medium">
+                        Deliver
+                    </div>
+                    <h3 class="text-black text-2xl font-semibold">
+                        Full Plans, Specs & Estimates — Ready to Go
+                    </h3>
+                    <div class="my-4">
+                        <img class="w-full" src="img/deliver.jpg" alt="">
+                    </div>
+                    <p>Once approved, you receive complete architectural plans, material specifications, and a detailed
+                        estimate all white-labeled and ready to execute. Your client is aligned, excited, and ready to
+                        move forward.</p>
                 </div>
 
             </div>
 
-            <!-- CARD 02 -->
-            <div class="bg-stone-100 p-10 flex flex-col justify-between">
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-primary-light scroll-mt-19">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center items-stretch flex-col md:flex-row px-4">
                 <div class="w-full">
-                    <span class="uppercase tracking-[3px] text-sm text-black flex items-center gap-2 font-semibold"><span class="w-2 h-2 bg-black flex rounded-full"></span> MEMBERSHIP</span>
-                    <span class="uppercase tracking-[3px] text-sm text-[#7c5369] block font-semibold mt-2">Pro</span>
-                    <h2 class="heading-font text-xl leading-none text-black font-semibold tracking-wider mt-2 uppercase text-primary">Pro Membership</h2>
-                    <p class="mt-6 text-gray-600 leading-7">
-                        A project dashboard, Luna Al interviewer, and ongoing discounts for teams that design regularly.
-                    </p>
-
-                    
-
-                    <!-- Price -->
-                    <div class="mt-3 mb-4 flex items-end gap-2">
-                        <div class="flex items-center">
-                            <h5 class="text-primary text-3xl mt-3">$</h5>
-                            <h3 class="heading-font text-[64px] font-semibold leading-none text-primary">39</h3>
-                        </div>
-                        <div class="pt-5">
-                            <p class="text-primary text-lg">/ mo</p>
-                        </div>
+                    <div class="flex items-center gap-1">
+                        Our Work
                     </div>
-
-                    <p class="mt-6 text-gray-600 leading-7">
-                        <span class="text-primary font-semibold">+ avg $195 per project</span> varies by scope
-                    </p>
-
-                    <div class="border-t border-primary/30 my-8"></div>
-
-                    <!-- Features -->
-                    <ul class="space-y-2 text-sm">
-
-                        <!--<li class="flex items-start gap-3 text-[#615d5f]">
-                        <i data-lucide="check-square" class="w-5 h-5 text-primary"></i>
-                        2 seats included, +$15/mo per additional seat
-                        </li>-->
-
-                        <li class="flex items-start gap-3 text-[#615d5f]">
-                        <i data-lucide="check-square" class="w-5 h-5 text-primary"></i>
-                        Project dashboard to track every job
-                        </li>
-
-                        <!--<li class="flex items-start gap-3 text-[#615d5f]">
-                        <i data-lucide="check-square" class="w-5 h-5 text-primary"></i>
-                        Luna Al interviewer for client intake
-                        </li>-->
-
-                        <li class="flex items-start gap-3 text-[#615d5f]">
-                        <i data-lucide="check-square" class="w-5 h-5 text-primary"></i>
-                        15% member discount on every project fee
-                        </li>
-
-                        <li class="flex items-start gap-3 text-[#615d5f]">
-                        <i data-lucide="check-square" class="w-5 h-5 text-primary"></i>
-                        15% off additional services
-                        </li>
-
-                    </ul>
+                    <h4 class="text-2xl md:text-4xl font-semibold">Exteriors</h4>
+                    <h5 class="italic text-2xl text-primary">Transformed.</h5>
                 </div>
-                <div class="mt-10 flex items-center w-full">
-                    <a href="https://dzinly.com/users/membership" role="button" class="btn-outline text-nowrap rounded-0 text-xs block text-center w-full">
-                    JOIN PRO
-                    </a>
+
+                <div class="min-w-2xs w-100 flex justify-center">
+                    <div class="w-[1px] bg-primary h-full opacity-20"></div>
+                </div>
+
+                <div class="w-full flex flex-col items-center justify-center mt-3 md:mt-0">
+                    <p class="md:text-2xl">Every project began as a simple photo -submitted by a contractor, designed by
+                        our team, and approved by the homeowner in days.</p>
                 </div>
             </div>
 
-            <!-- CARD 03 -->
-            <div class="relative bg-primary p-10 flex flex-col justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
                 <div class="w-full">
-                    <!-- Badge -->
-                    <div class="absolute top-0 right-10 -translate-y-1/2 bg-[#2cc84d] text-white text-xs uppercase px-4 py-2 tracking-[2px]">
-                        Transform Your Business
-                    </div>
-
-                    <span class="uppercase tracking-[3px] text-sm text-white/80 flex items-center gap-2 font-semibold"><span class="w-2 h-2 bg-white flex rounded-full"></span> MEMBERSHIP</span>
-                    <span class="uppercase tracking-[3px] text-sm text-yellow-500 block font-semibold mt-2">Enterprise</span>
-                    <h2 class="heading-font text-xl leading-none text-yellow-50 font-semibold tracking-wider mt-2 uppercase text-primary">Enterprise Membership</h2>
-                    <p class="mt-6 text-white leading-7">
-                        Your own white-labeled design department -embedded on your site, backed by a dedicated team.
-                    </p>
-
-                    
-
-                    <!-- Price -->
-                    <div class="mt-3 mb-4 flex items-end gap-2">
-                        <div class="flex items-center">
-                            <h5 class="text-white text-3xl mt-3">$</h5>
-                            <h3 class="heading-font text-[64px] font-semibold leading-none text-white">299</h3>
-                        </div>
-                        <div class="pt-5">
-                            <p class="text-white text-lg">/ mo</p>
-                        </div>
-                    </div>
-
-                    <p class="mt-6 text-white/60 leading-7">
-                        <span class="text-white font-semibold"><span class="text-yellow-500">+</span> avg $179 per project</span> varies by scope
-                    </p>
-
-                    <div class="border-t border-white/30 my-8"></div>
-
-                    <!-- Features -->
-                    <ul class="space-y-2 mt-10 text-sm">
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        Everything in Pro Membership
-                        </li>
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        3 seats included, +$15/mo per additional seat
-                        </li>
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        White-label platform, embedded on your website
-                        </li>
-
-                        <!--<li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        $300 design credit every month
-                        </li>-->
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        20% member discount on every project fee & additional services
-                        </li>
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        Optional design consultations with your client, $150/session
-                        </li>
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        Luna Al chat archive for every project
-                        </li>
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        Priority support on every project
-                        </li>
-
-                        <li class="flex gap-3 text-white/70">
-                        <i data-lucide="check-square" class="w-5 h-5 text-white"></i>
-                        Guided onboarding for your account and settings
-                        </li>
-
-                    </ul>
+                    <img src="img/example_01.jpg" alt="">
                 </div>
-                <!-- Buttons -->
-                <div class="mt-10 space-y-4">
-                    <!-- <div class=" flex items-center w-full">
+                <div class="w-full">
+                    <img src="img/example_02.jpg" alt="">
+                </div>
+                <div class="w-full">
+                    <img src="img/example_03.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section id="pricing" class="py-20 px-4 scroll-mt-19">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center justify-center">
+                <div class="w-full text-center">
+                    <div
+                        class="flex items-center justify-center gap-1 uppercase text-primary tracking-[3px] font-semibold">
+                        Pricing & Packages
+                    </div>
+                    <h4 class="text-4xl py-2">Renderings, plans & presentations.</h4>
+                    <h5 class="italic text-4xl text-primary">One team.</h5>
+
+                    <div class="max-w-xl mx-auto my-5">
+                        <p>Everything your projects need before the first shovel - from US-based designers and
+                            architects, accelerated by Al, and delivered entirely under your brand.</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p
+                            class="flex items-center bg-primary text-white py-2 px-5 rounded-full text-base/6 text-xs gap-2">
+                            <i data-lucide="tag" class="w-3 h-3"></i> White-labeled on every plan. Enterprise removes
+                            our name entirely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-5 gap-4">
+                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
+                    <div class="flex flex-col gap-2">
+                        <div class="icon text-primary"><i data-lucide="image" class="w-5 h-5"></i></div>
+                        <div class="con">
+                            <div class="text-black font-semibold">Photorealistic renderings</div>
+                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+                        </div>
+                        <div class="flex items-center gap-1 mt-12">
+                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
+                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
+                    <div class="flex flex-col gap-2">
+                        <div class="text-primary"><i data-lucide="layout-grid" class="w-5 h-5"></i></div>
+                        <div class="con">
+                            <div class="text-black font-semibold">Photorealistic renderings</div>
+                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+                        </div>
+                        <div class="flex items-center gap-1  mt-12">
+                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
+                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
+                    <div class="flex flex-col gap-2">
+                        <div class="text-primary"><i data-lucide="table-cells-split" class="w-5 h-5"></i></div>
+                        <div class="con">
+                            <div class="text-black font-semibold">Photorealistic renderings</div>
+                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+                        </div>
+                        <div class="flex items-center gap-1  mt-12">
+                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
+                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
+                    <div class="flex flex-col gap-2">
+                        <div class="text-primary"><i data-lucide="file-chart-line" class="w-5 h-5"></i></div>
+                        <div class="con">
+                            <div class="text-black font-semibold">Photorealistic renderings</div>
+                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+                        </div>
+                        <div class="flex items-center gap-1  mt-12">
+                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
+                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-5 gap-4">
+
+                <!-- CARD 01 -->
+                <div class="bg-stone-100 p-10 flex flex-col justify-between rounded-xl border border-primary/20">
+                    <div class="w-full">
+
+                        <span class="uppercase tracking-[1px] text-sm text-[#7c5369] block font-semibold">WHERE
+                            EVERY PRO STARTS</span>
+                        <h2 class="heading-font text-4xl leading-none text-black font-semibold tracking-wider mt-3">
+                            Professional</h2>
+                        <p class="mt-3 text-gray-600 leading-7">
+                            Real US-based designers, architects and Al for design, visualization, selections and plans.
+                            No subscription.
+                        </p>
+
+                        <div class="border-t border-primary/30 my-8"></div>
+
+                        <!-- Price -->
+                        <div class="mt-3 mb-4 flex items-end gap-2">
+                            <div class="flex items-center">
+                                <div class="heading-font text-[64px] leading-none text-black">$0</div>
+                            </div>
+                            <div class="pt-5">
+                                <p class="text-black text-lg">to join</p>
+                            </div>
+                        </div>
+
+                        <p class="mt-6 text-gray-600 leading-7">
+                            Design services averaging <span class="text-black font-bold">$150-$1,000</span> per
+                            project, quoted up front <span class="text-black font-bold">+ $250 Copyright Use
+                                License</span> per project
+                        </p>
+
+                        <div class="border-t border-primary/30 my-8"></div>
+
+                        <!-- Features -->
+                        <ul class="space-y-4 text-sm text-black">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0">Up to 5 projects per year</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0"><span class="font-semibold">1 user</span> per firm</p>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0"><span>Copyright Use License</span> to build from the design, per project
+                                </p>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0"><span class="font-semibold">Branded with your logo:</span> every
+                                    rendering, plan and presentation, with a small "Powered by
+                                    DZINLY Pro" mark</p>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0"><span class="font-semibold">Project dashboard:</span> manage, track and
+                                    share up to 5 projects</p>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0">US-based designers, architects and Al rendering</p>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0">Photorealistic renderings, material selections, plans and specs</p>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-primary"></i>
+                                <p class="m-0"><span class="font-semibold">Chat support:</span> connect with the DZINLY
+                                    Pro team through chat when you need help</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mt-10 flex items-center w-full">
+                        <a href="https://dzinly.com/users/membership" role="button"
+                            class="btn-outline text-nowrap rounded-full text-bold text-xs block text-center w-full">
+                            Next Steps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 02 -->
+                <div class="relative bg-primary p-10 flex flex-col justify-between rounded-xl">
+                    <div class="w-full">
+                        <!-- Badge -->
+                        <div
+                            class="absolute top-0 right-10 -translate-y-1/2 bg-[#2cc84d] text-white text-xs uppercase px-4 py-2 tracking-[2px]">
+                            Transform Your Business
+                        </div>
+                        <span class="uppercase tracking-[1px] text-sm text-white block font-semibold mt-2">YOUR DESIGN
+                            DEPARTMENT</span>
+                        <h2 class="heading-font text-4xl leading-none text-white font-semibold tracking-wider mt-3">
+                            Enterprise</h2>
+                        <p class="mt-3 text-white leading-7">
+                            Unlimited licensing, member pricing and a concierge, built for firms that sell design on
+                            every job.
+                        </p>
+
+                        <div class="border-t border-white/30 my-8"></div>
+
+                        <!-- Price -->
+                        <div class="mt-3 mb-4 flex items-end gap-2">
+                            <div class="flex items-center">
+                                <div class="heading-font text-[64px] leading-none text-white">$299</div>
+                            </div>
+                            <div class="pt-5">
+                                <p class="text-white text-lg">/ month</p>
+                            </div>
+                        </div>
+
+                        <p class="mt-6 text-white/60 leading-7">
+                            Design services averaging <span class="text-white font-semibold">$150-$1,000</span> per
+                            project, quoted up front + <span class="text-white font-semibold">$0 Copyright Use
+                                License</span>
+                            per project
+                        </p>
+
+                        <div class="border-t border-white/30 my-8"></div>
+
+                        <!-- Features -->
+                        <ul class="space-y-4 mt-10 text-sm text-white">
+                            <li class="font-semibold">Everything in Professional, plus:</li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p>Unlimited projects per year</p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p>Multiple users per firm</p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p>Unlimited Copyright Use License, included</p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p><span class="font-semibold">100% white-labeled:</span> no DZINLY Pro mention
+                                    anywhere. Deliverables, communications and
+                                    design team carry only your brand</p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p><span class="font-semibold">Unlimited project dashboard:</span> manage, track and
+                                    share all your projects in one place
+                                </p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p>15% off all design and architectural services</p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p>Add your margin to every project to make DZINLY Pro a profit center</p>
+                            </li>
+
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="min-w-5 min-h-5 text-white"></i>
+                                <p><span class="font-semibold">Direct phone support:</span> get a dedicated number to
+                                    reach the DZINLY Pro team when you
+                                    need help</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="mt-10 space-y-4">
+                        <!-- <div class=" flex items-center w-full">
                         <div class="border-t border-primary/30 w-full"></div>
                         <a href="https://cal.com/jackie-mosher-htpemm/enterprise-demo-call?overlayCalendar=true" target="_blank" role="button" class="btn text-nowrap rounded-0 min-w-[215px] text-xs">
                             Schedule Your Demo
                         </a>
                         <div class="border-t border-primary/30 w-full"></div>
-                    </div> -->
+                        </div> -->
 
-                    <div class=" flex items-center w-full">
-                        <a href="https://dzinly.in/dzinly-enterprise-talk-to-us" class="btn bg-yellow-200/50 text-nowrap rounded-0 w-full block text-center text-xs">
-                            LEARN MORE
-                        </a>
+                        <div class=" flex items-center w-full">
+                            <a href="https://dzinly.in/dzinly-enterprise-talk-to-us"
+                                class="btn bg-white/80 text-primary font-bold text-nowrap rounded-full w-full block text-center text-xs">
+                                Next Steps
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <h4 class="text-4xl py-8 text-center">Compare plans</h4>
+
+            <div class="w-full overflow-x-auto rounded-sm">
+                <table class="w-full min-w-[800px] border-collapse text-left font-sans text-base text-gray-700">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="w-[30%] border-b border-gray-200 px-5 py-3 font-bold text-gray-900">
+                                Feature
+                            </th>
+                            <th class="w-[32%] border-b border-gray-200 px-5 py-3 font-bold text-gray-900">
+                                Professional
+                            </th>
+                            <th
+                                class="w-[38%] border-b border-gray-200 bg-[#f0e5eb] px-10 py-3 font-bold text-[#80566b]">
+                                Enterprise
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Membership</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Free</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">$149/mo</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Projects per year</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Up to 5</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Unlimited</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Copyright Use License</td>
+                            <td class="border-b border-gray-200 px-5 py-4">$250 per project</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Included, unlimited</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">White-labeled under your brand</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Your brand + “Powered by DZINLY Pro”</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Your brand only</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Set your price &amp; keep the margin</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Included</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Included, with more room at
+                                member pricing</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Design &amp; architectural services</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Standard rates</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">15% off</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">US designers, architects &amp; AI</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Included</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Included</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Projects stored in dashboard</td>
+                            <td class="border-b border-gray-200 px-5 py-4">Current year</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Unlimited</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border-b border-gray-200 px-5 py-4">Users</td>
+                            <td class="border-b border-gray-200 px-5 py-4">1</td>
+                            <td class="border-b border-gray-200 bg-[#f8f2f5] px-10 py-4">Multiple</td>
+                        </tr>
+
+                        <tr>
+                            <td class="px-5 py-4">Support</td>
+                            <td class="px-5 py-4">Chat</td>
+                            <td class="bg-[#f8f2f5] px-10 py-4">Dedicated phone line</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-<section class="py-20 px-4 bg-[url('img/bg-img.jpg')] bg-cover bg-center">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center justify-center">
-            <div class="w-full text-center">
-                <div class="flex items-center justify-center gap-1 text-white">
-                    Enterprise Package — The Difference
-                </div>
-                <h4 class="text-4xl text-white py-2 font-semibold">The Only Design Service That</h4>
-                <h5 class="italic text-2xl text-white/40">Makes You Money.</h5>
-
-                <div class="max-w-3xl mx-auto my-5">
-                    <p class="text-white">Every design solution you've tried, - or considered, - is an expense. DZINLY Pro 
-                        Enterprise is built differently. Our pricing is intentionally low so you have 
-                        plenty of room to set your own margin, stay highly competitive, and turn design 
-                        into a revenue line that runs itself.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-4">
-            <div class="bg-white/10 p-10 h-full">
-                <h4 class="text-xl text-white mb-4">You Set the Margin. We Do the Work.</h4>
-                <p class="text-white text-lg">Set your price to clients at whatever your market supports. Our costs are structured to leave you 
-                    significant room above industry-standard rates, - without lifting a finger on the design itself.</p>
-            </div>
-            <div class="bg-white/10 p-10 h-full">
-                <h4 class="text-xl text-white mb-4">Designer-Led & AI-Powered.</h4>
-                <p class="text-white text-lg">Other rendering tools give contractors a technology layer with no design expertise behind it. 
-                    That's why clients still can't decide — they're looking at AI output with no professional input applied. DZINLY 
-                    Pro pairs AI speed with real US-based designers and architects. The difference is a result clients actually love 
-                    and approve.</p>
-            </div>
-            <div class="bg-white/10 p-10 h-full">
-                <h4 class="text-xl text-white mb-4">Profit While You Focus on the Work.</h4>
-                <p class="text-white text-lg">Once set up, your white-labeled design portal runs independently. Clients can initiate their 
-                    own projects, work directly with your design team, and arrive at approval, - all without you managing the process. 
-                    You maintain full visibility into every message, decision, and design change between your team and your client. You 
-                    collect the margin. You do the work you built your business to do.</p>
-            </div>
-        </div>
-
-        <div class="border-t border-white/30 my-8"></div>
-
-        <div class="flex gap-4 items-center justify-center my-6">
-            <a href="https://cal.com/jackie-mosher-htpemm/enterprise-demo-call" target="_blank" class="btn-light">Schedule Demo</a>
-        </div>
-
-        <div class="flex items-center items-stretch flex-col md:flex-row px-4">
-            <div class="w-full">
-                <h4 class="text-xl text-white italic leading-8">We tried other rendering tools but our clients kept going back and forth 
-                    and never felt confident. The second we started using DZINLY Pro, clients were approving designs in days. It completely 
-                    changed how we close jobs.</h4>
-                <p class="mt-5 text-xs text-white">— Hamsa S. J&J Exterior Services, Clovis, CA</p>
-            </div>
-
-            <div class="min-w-2xs w-100 flex justify-center">
-                <div class="w-[1px] bg-white h-full opacity-20"></div>
-            </div>
-
-            <div class="w-full">
-                <h4 class="text-xl text-white italic leading-8">I never thought design could make us money. Now it's one of our best margins. 
-                    We set our price, the team handles everything, and clients love the experience. It practically runs itself.</h4>
-                <p class="mt-5 text-xs text-white">— Lenny T.  LTJ and Son Siding & Roof, Durham, NC</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="py-20 px-4 bg-primary-light">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center justify-center">
-            <div class="w-full text-center">
-                <div class="flex items-center justify-center gap-1 uppercase">
-                    FROM THE FIELD
-                </div>
-                <h4 class="text-4xl py-2 font-semibold">What Contractors Are</h4>
-                <h5 class="italic text-2xl text-primary">Saying About DZINLY Pro</h5>
-
-                <div class="max-w-xl mx-auto my-5">
-                    <p>From painters to siding contractors, builders to landscapers here's how DZINLY Pro is changing the way the trades 
-                        work with clients</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-4">
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-[#CE8DAF] tracking-widest">Refine</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-white"></i>
-                    <h5 class="text-white italic">Elerign used to be the part of every job I dreaded. Clients toould go back and forth 
-                        on colors for weeks. Not: 1 send them to the portal and they come back with decisions made. I don't touch the design 
-                        process at all anymary</h5>
-                </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
-                        jm
+    <section class="py-20 px-4 bg-[url('img/bg-img.jpg')] bg-cover bg-center">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center justify-center">
+                <div class="w-full text-center">
+                    <div class="flex items-center justify-center gap-1 text-white">
+                        Enterprise Package — The Difference
                     </div>
-                    <!-- FIX #5: gap-0.2 → gap-1 (invalid class fixed) -->
-                    <div class="flex flex-col gap-1">
-                        <div class="title text-white font-medium">James M.</div>
-                        <!-- FIX #6: tex-xs → text-xs (typo fixed) -->
-                        <small class="text-xs text-[#CE8DAF]">Exterior Painting Contractor - Michigan</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-primary tracking-widest">SIDING CONTRACTOR</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-primary"></i>
-                    <h5 class="italic">Elerign used to be the part of every job I dreaded. Clients toould go back and forth 
-                        on colors for weeks. Not: 1 send them to the portal and they come back with decisions made. I don't touch the design 
-                        process at all anymary</h5>
-                </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
-                        sr
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title font-medium">Sarah R.</div>
-                        <small class="text-xs text-primary">Siding & Exterior Contractor- Ohio</small>
+                    <h4 class="text-4xl text-white py-2 font-semibold">The Only Design Service That</h4>
+                    <h5 class="italic text-2xl text-white/40">Makes You Money.</h5>
+
+                    <div class="max-w-3xl mx-auto my-5">
+                        <p class="text-white">Every design solution you've tried, - or considered, - is an expense.
+                            DZINLY Pro
+                            Enterprise is built differently. Our pricing is intentionally low so you have
+                            plenty of room to set your own margin, stay highly competitive, and turn design
+                            into a revenue line that runs itself.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-[#CE8DAF] tracking-widest">BUILDER</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-white"></i>
-                    <h5 class="text-white italic">I've added design services as a profit line on every project. I mark it up, 
-                        the client pays happily because they see real value, and my team does zero extra work. It's the easiest money we make.</h5>
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-4">
+                <div class="bg-white/10 p-10 h-full">
+                    <h4 class="text-xl text-white mb-4">You Set the Margin. We Do the Work.</h4>
+                    <p class="text-white text-lg">Set your price to clients at whatever your market supports. Our costs
+                        are structured to leave you
+                        significant room above industry-standard rates, - without lifting a finger on the design itself.
+                    </p>
                 </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
-                        dk
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title text-white font-medium">David K.</div>
-                        <small class="text-xs text-[#CE8DAF]">Custom Home Builder Texas</small>
-                    </div>
+                <div class="bg-white/10 p-10 h-full">
+                    <h4 class="text-xl text-white mb-4">Designer-Led & AI-Powered.</h4>
+                    <p class="text-white text-lg">Other rendering tools give contractors a technology layer with no
+                        design expertise behind it.
+                        That's why clients still can't decide — they're looking at AI output with no professional input
+                        applied. DZINLY
+                        Pro pairs AI speed with real US-based designers and architects. The difference is a result
+                        clients actually love
+                        and approve.</p>
                 </div>
-            </div>
-
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-primary tracking-widest">LANDSCAPER</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-primary"></i>
-                    <h5 class="italic">Landscape clients are the hardest to get to commit. The Dzinly Pro rendering showed 
-                        my client exactly how their front yard would look plants, hardscape. lighting and they signed off 
-                        in 48 hours. Usually that takes weeks.</h5>
-                </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
-                        ml
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title font-medium">Maria L.</div>
-                        <small class="text-xs text-primary">Landscape Designer Florida</small>
-                    </div>
+                <div class="bg-white/10 p-10 h-full">
+                    <h4 class="text-xl text-white mb-4">Profit While You Focus on the Work.</h4>
+                    <p class="text-white text-lg">Once set up, your white-labeled design portal runs independently.
+                        Clients can initiate their
+                        own projects, work directly with your design team, and arrive at approval, - all without you
+                        managing the process.
+                        You maintain full visibility into every message, decision, and design change between your team
+                        and your client. You
+                        collect the margin. You do the work you built your business to do.</p>
                 </div>
             </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-[#CE8DAF] tracking-widest">GENERAL CONTRACTOR</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-white"></i>
-                    <h5 class="text-white italic">We used to hire a freelance designer for every big project. Slow, expensive, 
-                        and the client still wasn't sure. Dzinly Pro replaced all of that faster results. happier clients, and we keep the margin.</h5>
-                </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
-                        tp
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title text-white font-medium">Tom P.</div>
-                        <small class="text-xs text-[#CE8DAF]">General Contractor Colorado</small>
-                    </div>
-                </div>
+            <div class="border-t border-white/30 my-8"></div>
+
+            <div class="flex gap-4 items-center justify-center my-6">
+                <a href="https://cal.com/jackie-mosher-htpemm/enterprise-demo-call" target="_blank"
+                    class="btn-light">Schedule Demo</a>
             </div>
 
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-primary tracking-widest">BUILDER</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-primary"></i>
-                    <h5 class="italic">The white-label piece is huge for us. Our clients love our new in-house design team. It's elevated 
-                        our entire brand and we're winning bids we never would have gotten before.</h5>
+            <div class="flex items-center items-stretch flex-col md:flex-row px-4">
+                <div class="w-full">
+                    <h4 class="text-xl text-white italic leading-8">We tried other rendering tools but our clients kept
+                        going back and forth
+                        and never felt confident. The second we started using DZINLY Pro, clients were approving designs
+                        in days. It completely
+                        changed how we close jobs.</h4>
+                    <p class="mt-5 text-xs text-white">— Hamsa S. J&J Exterior Services, Clovis, CA</p>
                 </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
-                        bc
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title font-medium">Brian C.</div>
-                        <small class="text-xs text-primary">Residential Builder Tennessee</small>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-[#CE8DAF] tracking-widest">roofer</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-white"></i>
-                    <h5 class="text-white italic">Material selection conversations used to stall every job. Clients couldn't visualize 
-                        shingle colors on their roof. Dzinly Pro ended all of that. They see it, love it, and we move forward. Simple.</h5>
+                <div class="min-w-2xs w-100 flex justify-center">
+                    <div class="w-[1px] bg-white h-full opacity-20"></div>
                 </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
-                        rh
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title text-white font-medium">Rick H.</div>
-                        <small class="text-xs text-[#CE8DAF]">Roofing Contractor-Georgia</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-primary tracking-widest">LANDSCAPER</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-primary"></i>
-                    <h5 class="italic">My clients now show up to our first meeting having already explored desigu options. The 
-                        conversation is completely different they're excited, not confused. We spend our time refining, not starting 
-                        from scratch.</h5>
-                </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
-                        kw
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title font-medium">Karen W.</div>
-                        <small class="text-xs text-primary">Landscape & Hardscape Arizona</small>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
-                <div class="title uppercase text-[#CE8DAF] tracking-widest">PAINTER</div>
-                <div class="flex flex-col gap-4">
-                    <i data-lucide="Quote" class="text-white"></i>
-                    <h5 class="text-white italic">I used to spend hours on client calls trying to describe what a color would look like. 
-                        Now the rendering does it for me. My close rate on exterior jobs has gone up significantly since we started using 
-                        Dzinly Pro.</h5>
-                </div>
-                <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
-                    <div class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
-                        an
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <div class="title text-white font-medium">Alex N.</div>
-                        <small class="text-xs text-[#CE8DAF]">Painting Contractor California</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</section>
-
-<section class="py-20 px-4">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center justify-center">
-            <div class="w-full text-center">
-                <div class="flex items-center justify-center gap-1 uppercase">
-                    Why DZINLY
-                </div>
-                <h4 class="text-4xl py-2 font-semibold">Built for the Trades. <br> Not Adapted for Them.</h4>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-4 mt-8 gap-4">
-            <div class="card">
-                <img class="aspect-3/1.8 object-cover w-full" src="img/image_01.jpg" />
-                <div class="flex flex-col gap-1 mt-3">
-                    <h5 class="text-xl min-h-[56px]">Real US Designers + AI Speed</h5>
-                    <p>No commitment required to get started. Choose the package that fits your business today, - and upgrade anytime.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="aspect-3/1.8 object-cover w-full" src="img/image_02.jpg" />
-                <div class="flex flex-col gap-1 mt-3">
-                    <h5 class="text-xl min-h-[56px]">Invisible Technology, Visible Brand</h5>
-                    <p>Your clients experience your brand at every touchpoint. The portal, the renderings, the plans, the 
-                        emails, - all carry your name. We're the engine; you get the credit.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="aspect-3/1.8 object-cover w-full" src="img/image_03.jpg" />
-                <div class="flex flex-col gap-1 mt-3">
-                    <h5 class="text-xl min-h-[56px]">Hands-Off or Hands-On — Your Choice</h5>
-                    <p>Manage every project yourself, delegate to your team, or let clients self-serve through your portal entirely. 
-                        DZINLY adapts to how your business operates, - not the other way around.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="aspect-3/1.8 object-cover w-full" src="img/image_04.jpg" />
-                <div class="flex flex-col gap-1 mt-3">
-                    <h5 class="text-xl min-h-[56px]">End-to-End — Not Just Pretty Pictures</h5>
-                    <p>From initial concept to final approved plans and specifications, - everything needed to start a project is 
-                        generated inside the platform. One workflow, start to finish.</p>
+                <div class="w-full">
+                    <h4 class="text-xl text-white italic leading-8">I never thought design could make us money. Now it's
+                        one of our best margins.
+                        We set our price, the team handles everything, and clients love the experience. It practically
+                        runs itself.</h4>
+                    <p class="mt-5 text-xs text-white">— Lenny T. LTJ and Son Siding & Roof, Durham, NC</p>
                 </div>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-20 px-4 bg-primary-light">
-    <div class="container max-w-7xl mx-auto">
-        <div class="flex items-center justify-center">
-            <div class="w-full text-center">
-                <div class="flex items-center justify-center gap-1">
-                    Ready to transform your business?
+    <section class="py-20 px-4 bg-primary-light">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center justify-center">
+                <div class="w-full text-center">
+                    <div class="flex items-center justify-center gap-1 uppercase">
+                        FROM THE FIELD
+                    </div>
+                    <h4 class="text-4xl py-2 font-semibold">What Contractors Are</h4>
+                    <h5 class="italic text-2xl text-primary">Saying About DZINLY Pro</h5>
+
+                    <div class="max-w-xl mx-auto my-5">
+                        <p>From painters to siding contractors, builders to landscapers here's how DZINLY Pro is
+                            changing the way the trades
+                            work with clients</p>
+                    </div>
+
                 </div>
-                <h4 class="text-4xl py-2 font-semibold">Your Design Team is Waiting to</h4>
-                <h5 class="italic text-2xl text-primary">Get to Work.</h5>
-                <div class="max-w-5xl mx-auto my-5">
-                    <p class="text-xl">Schedule a 15 minute demo and see exactly how DZINLY Pro can be running under your brand. — Helping 
-                        you win more bids, delight more clients, and make more money — in weeks, not months.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-5 gap-4">
+                <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-[#CE8DAF] tracking-widest">Refine</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-white"></i>
+                        <h5 class="text-white italic">Elerign used to be the part of every job I dreaded. Clients toould
+                            go back and forth
+                            on colors for weeks. Not: 1 send them to the portal and they come back with decisions made.
+                            I don't touch the design
+                            process at all anymary</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
+                            jm
+                        </div>
+                        <!-- FIX #5: gap-0.2 → gap-1 (invalid class fixed) -->
+                        <div class="flex flex-col gap-1">
+                            <div class="title text-white font-medium">James M.</div>
+                            <!-- FIX #6: tex-xs → text-xs (typo fixed) -->
+                            <small class="text-xs text-[#CE8DAF]">Exterior Painting Contractor - Michigan</small>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex gap-4 items-center justify-center my-6">
-                    <a href=" https://dzinly.com/dzinly-enterprise" target="_blank" class="btn">Schedule A Demo</a>
+
+                <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-primary tracking-widest">SIDING CONTRACTOR</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-primary"></i>
+                        <h5 class="italic">Elerign used to be the part of every job I dreaded. Clients toould go back
+                            and forth
+                            on colors for weeks. Not: 1 send them to the portal and they come back with decisions made.
+                            I don't touch the design
+                            process at all anymary</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
+                            sr
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title font-medium">Sarah R.</div>
+                            <small class="text-xs text-primary">Siding & Exterior Contractor- Ohio</small>
+                        </div>
+                    </div>
                 </div>
-                <p>No commitment required. See the platform live, ask every question, and decide if it's right for your business.</p>
+
+                <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-[#CE8DAF] tracking-widest">BUILDER</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-white"></i>
+                        <h5 class="text-white italic">I've added design services as a profit line on every project. I
+                            mark it up,
+                            the client pays happily because they see real value, and my team does zero extra work. It's
+                            the easiest money we make.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
+                            dk
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title text-white font-medium">David K.</div>
+                            <small class="text-xs text-[#CE8DAF]">Custom Home Builder Texas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-primary tracking-widest">LANDSCAPER</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-primary"></i>
+                        <h5 class="italic">Landscape clients are the hardest to get to commit. The Dzinly Pro rendering
+                            showed
+                            my client exactly how their front yard would look plants, hardscape. lighting and they
+                            signed off
+                            in 48 hours. Usually that takes weeks.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
+                            ml
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title font-medium">Maria L.</div>
+                            <small class="text-xs text-primary">Landscape Designer Florida</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-[#CE8DAF] tracking-widest">GENERAL CONTRACTOR</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-white"></i>
+                        <h5 class="text-white italic">We used to hire a freelance designer for every big project. Slow,
+                            expensive,
+                            and the client still wasn't sure. Dzinly Pro replaced all of that faster results. happier
+                            clients, and we keep the margin.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
+                            tp
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title text-white font-medium">Tom P.</div>
+                            <small class="text-xs text-[#CE8DAF]">General Contractor Colorado</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-primary tracking-widest">BUILDER</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-primary"></i>
+                        <h5 class="italic">The white-label piece is huge for us. Our clients love our new in-house
+                            design team. It's elevated
+                            our entire brand and we're winning bids we never would have gotten before.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
+                            bc
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title font-medium">Brian C.</div>
+                            <small class="text-xs text-primary">Residential Builder Tennessee</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-[#CE8DAF] tracking-widest">roofer</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-white"></i>
+                        <h5 class="text-white italic">Material selection conversations used to stall every job. Clients
+                            couldn't visualize
+                            shingle colors on their roof. Dzinly Pro ended all of that. They see it, love it, and we
+                            move forward. Simple.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
+                            rh
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title text-white font-medium">Rick H.</div>
+                            <small class="text-xs text-[#CE8DAF]">Roofing Contractor-Georgia</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-primary tracking-widest">LANDSCAPER</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-primary"></i>
+                        <h5 class="italic">My clients now show up to our first meeting having already explored desigu
+                            options. The
+                            conversation is completely different they're excited, not confused. We spend our time
+                            refining, not starting
+                            from scratch.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-primary/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-primary text-sm font-medium text-white tracking-widest">
+                            kw
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title font-medium">Karen W.</div>
+                            <small class="text-xs text-primary">Landscape & Hardscape Arizona</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary h-full p-6 flex flex-col justify-between gap-4 md:aspect-square w-full">
+                    <div class="title uppercase text-[#CE8DAF] tracking-widest">PAINTER</div>
+                    <div class="flex flex-col gap-4">
+                        <i data-lucide="Quote" class="text-white"></i>
+                        <h5 class="text-white italic">I used to spend hours on client calls trying to describe what a
+                            color would look like.
+                            Now the rendering does it for me. My close rate on exterior jobs has gone up significantly
+                            since we started using
+                            Dzinly Pro.</h5>
+                    </div>
+                    <div class="box-footer flex items-center gap-2 border-t-[1px] border-white/30 pt-6">
+                        <div
+                            class="flex items-center justify-center uppercase w-10 h-10 rounded-full bg-[#2E2027] text-sm font-medium text-white tracking-widest">
+                            an
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <div class="title text-white font-medium">Alex N.</div>
+                            <small class="text-xs text-[#CE8DAF]">Painting Contractor California</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="py-20 px-4">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center justify-center">
+                <div class="w-full text-center">
+                    <div class="flex items-center justify-center gap-1 uppercase">
+                        Why DZINLY
+                    </div>
+                    <h4 class="text-4xl py-2 font-semibold">Built for the Trades. <br> Not Adapted for Them.</h4>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-8 gap-4">
+                <div class="card">
+                    <img class="aspect-3/1.8 object-cover w-full" src="img/image_01.jpg" />
+                    <div class="flex flex-col gap-1 mt-3">
+                        <h5 class="text-xl min-h-[56px]">Real US Designers + AI Speed</h5>
+                        <p>No commitment required to get started. Choose the package that fits your business today, -
+                            and upgrade anytime.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="aspect-3/1.8 object-cover w-full" src="img/image_02.jpg" />
+                    <div class="flex flex-col gap-1 mt-3">
+                        <h5 class="text-xl min-h-[56px]">Invisible Technology, Visible Brand</h5>
+                        <p>Your clients experience your brand at every touchpoint. The portal, the renderings, the
+                            plans, the
+                            emails, - all carry your name. We're the engine; you get the credit.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="aspect-3/1.8 object-cover w-full" src="img/image_03.jpg" />
+                    <div class="flex flex-col gap-1 mt-3">
+                        <h5 class="text-xl min-h-[56px]">Hands-Off or Hands-On — Your Choice</h5>
+                        <p>Manage every project yourself, delegate to your team, or let clients self-serve through your
+                            portal entirely.
+                            DZINLY adapts to how your business operates, - not the other way around.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="aspect-3/1.8 object-cover w-full" src="img/image_04.jpg" />
+                    <div class="flex flex-col gap-1 mt-3">
+                        <h5 class="text-xl min-h-[56px]">End-to-End — Not Just Pretty Pictures</h5>
+                        <p>From initial concept to final approved plans and specifications, - everything needed to start
+                            a project is
+                            generated inside the platform. One workflow, start to finish.</p>
+                    </div>
+                </div>
 
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="p-4 py-6">
-    <div class="container max-w-7xl mx-auto flex flex-col md:flex-row gap-3 items-center justify-between">
-        <a href="/index.html"><img src="img/logo.svg" alt=""></a>
-        <div class="navbar nav-right flex items-center justify-center uppercase tracking-widest text-sm text-black flex-wrap gap-3 md:gap-6">
-            <a href="https://dzinly.com/contact-us" class="opacity-70 hover:opacity-100">Contact</a>
-            <a href="https://dzinly.com/privacy-policy" class="opacity-70 hover:opacity-100">Privacy Policy</a>                    
+    <section class="py-20 px-4 bg-primary-light">
+        <div class="container max-w-7xl mx-auto">
+            <div class="flex items-center justify-center">
+                <div class="w-full text-center">
+                    <div class="flex items-center justify-center gap-1">
+                        Ready to transform your business?
+                    </div>
+                    <h4 class="text-4xl py-2 font-semibold">Your Design Team is Waiting to</h4>
+                    <h5 class="italic text-2xl text-primary">Get to Work.</h5>
+                    <div class="max-w-5xl mx-auto my-5">
+                        <p class="text-xl">Schedule a 15 minute demo and see exactly how DZINLY Pro can be running under
+                            your brand. — Helping
+                            you win more bids, delight more clients, and make more money — in weeks, not months.</p>
+                    </div>
+                    <div class="flex gap-4 items-center justify-center my-6">
+                        <a href=" https://dzinly.com/dzinly-enterprise" target="_blank" class="btn">Schedule A Demo</a>
+                    </div>
+                    <p>No commitment required. See the platform live, ask every question, and decide if it's right for
+                        your business.</p>
+
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
+
+    <footer class="p-4 py-6">
+        <div class="container max-w-7xl mx-auto flex flex-col md:flex-row gap-3 items-center justify-between">
+            <a href="/index.html"><img src="img/logo.svg" alt=""></a>
+            <div
+                class="navbar nav-right flex items-center justify-center uppercase tracking-widest text-sm text-black flex-wrap gap-3 md:gap-6">
+                <a href="https://dzinly.com/contact-us" class="opacity-70 hover:opacity-100">Contact</a>
+                <a href="https://dzinly.com/privacy-policy" class="opacity-70 hover:opacity-100">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="js/custom.js"></script>
-<script>
-    window.addEventListener('load', () => {
-        const slider = document.querySelector('img-comparison-slider');
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const slider = document.querySelector('img-comparison-slider');
 
-        if (slider?.shadowRoot) {
-            const style = document.createElement('style');
-            style.textContent = `
+            if (slider?.shadowRoot) {
+                const style = document.createElement('style');
+                style.textContent = `
                 .handle {
                     cursor: col-resize !important;
                     pointer-events: auto !important;
                 }
             `;
-            slider.shadowRoot.appendChild(style);
-        }
-    });
-</script>
+                slider.shadowRoot.appendChild(style);
+            }
+        });
+    </script>
 </body>
+
 </html>
