@@ -969,6 +969,9 @@
       stroke: var(--color-default) !important;
     }
   }
+  .border-\[\#c9b8bf\] {
+    border-color: #c9b8bf;
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
