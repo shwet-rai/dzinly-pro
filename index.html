@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css?v=1.3">
+    <link rel="stylesheet" href="style.css?v=1.8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/flowbite/dist/flowbite.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
@@ -98,39 +98,19 @@
                 </div>
             </div>
         </div>
-        <div class="patners bg-primary-light py-4">
-            <div class="swiper logoSwiper">
-                <div class="swiper-wrapper justify-center">
+        <div class="partner-sec bg-primary-light py-4">
+            <div class="container max-w-7xl mx-auto">
+                <div class="swiper logoSwiper">
+                    <div class="swiper-wrapper">
 
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/partner2.png" class="w-auto mx-auto h-[34px]" alt="">
+                        <div class="swiper-slide">
+                            <img src="img/DZINLY_As_Seen_In2.png" class="h-auto md:h-16 mx-auto" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/DZINLY_As_Seen_In.png" class="h-auto md:h-16 mx-auto" alt="">
+                        </div>
                     </div>
-
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/architectural-digest.png" class="w-auto mx-auto h-[34px]" alt="">
-                    </div>
-
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/dbusiness.png" class="w-auto mx-auto h-[34px]" alt="">
-                    </div>
-
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/national-association-of-realtors.png" class="w-auto mx-auto h-[34px]" alt="">
-                    </div>
-
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/realtor-magazine.png" class="w-auto mx-auto h-[34px]" alt="">
-                    </div>
-
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/domino.png" class="w-auto mx-auto h-[34px]" alt="">
-                    </div>
-
-                    <div class="swiper-slide w-auto!">
-                        <img src="img/midwest-living.png" class="w-auto mx-auto h-[34px]" alt="">
-                    </div>
-
-
                 </div>
             </div>
         </div>
@@ -1005,70 +985,188 @@
                     </div>
                     <div class="flex items-center justify-center">
                         <p
-                            class="flex items-center bg-primary text-white py-2 px-5 rounded-full text-base/6 text-xs gap-2">
-                            <i data-lucide="tag" class="w-3 h-3"></i> White-labeled on every plan. Enterprise removes
-                            our name entirely.
+                            class="flex items-center bg-primary text-white py-2 px-3 rounded-full xs:text-xs lg:px-5 lg:text-md gap-2">
+                            <i data-lucide="tag" class="w-4 h-4 min-w-4 min-h-4"></i> White-labeled on every plan.
+                            Enterprise removes our name entirely.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-4 mt-5 gap-4">
-                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
-                    <div class="flex flex-col gap-2">
-                        <div class="icon text-primary"><i data-lucide="image" class="w-5 h-5"></i></div>
-                        <div class="con">
-                            <div class="text-black font-semibold">Photorealistic renderings</div>
-                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-7 gap-4">
+
+                <!-- Card 1 -->
+                <div class="example-card min-h-[240px]">
+                    <div class="example-card-inner">
+
+                        <!-- Front -->
+                        <div class="example-card-front bg-stone-100 rounded-xl p-6 border border-primary/20">
+                            <div class="flex flex-col h-full gap-3">
+                                <div class="text-primary">
+                                    <i data-lucide="image" class="w-7 h-7"></i>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <div class="text-black font-bold">Photorealistic renderings</div>
+                                    <p>Exteriors and landscapes, shown on the client's own home.</p>
+                                </div>
+
+                                <div class="mt-auto pt-8">
+                                    <button type="button"
+                                        class="flip-trigger flex items-center gap-2 text-primary text-sm font-bold"
+                                        aria-label="See photorealistic rendering example">
+                                        <i data-lucide="square-arrow-out-up-right" class="w-4 h-4"></i>
+                                        See an example
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-1 mt-12">
-                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
-                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+
+                        <!-- Back -->
+                        <div class="example-card-back">
+                            <img src="img/01-photorealistic-modern.png" alt="Photorealistic home rendering example"
+                                class="example-card-image">
+
+                            <div class="example-card-caption">
+                                <span>Before and after, on their home</span>
+                                <button type="button" class="flip-back" aria-label="Back to photorealistic renderings">
+                                    <i data-lucide="corner-up-left" class="w-4 h-4"></i>
+                                    Back
+                                </button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-primary"><i data-lucide="layout-grid" class="w-5 h-5"></i></div>
-                        <div class="con">
-                            <div class="text-black font-semibold">Photorealistic renderings</div>
-                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+
+                <!-- Card 2 -->
+                <div class="example-card min-h-[240px]">
+                    <div class="example-card-inner">
+
+                        <div class="example-card-front bg-stone-100 rounded-xl p-6 border border-primary/20">
+                            <div class="flex flex-col h-full gap-3">
+                                <div class="text-primary">
+                                    <i data-lucide="layout-grid" class="w-7 h-7"></i>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <div class="text-black font-bold">Materials &amp; colors</div>
+                                    <p>Designer curated selections clients can toggle and compare.</p>
+                                </div>
+
+                                <div class="mt-auto pt-8">
+                                    <button type="button"
+                                        class="flip-trigger flex items-center gap-2 text-primary text-sm font-bold">
+                                        <i data-lucide="square-arrow-out-up-right" class="w-4 h-4"></i>
+                                        See an example
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-1  mt-12">
-                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
-                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+
+                        <div class="example-card-back">
+                            <img src="img/02-landscape-design.png" alt="Materials and colors example"
+                                class="example-card-image">
+
+                            <div class="example-card-caption">
+                                <span>Materials and colors</span>
+                                <button type="button" class="flip-back">
+                                    <i data-lucide="corner-up-left" class="w-4 h-4"></i>
+                                    Back
+                                </button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-primary"><i data-lucide="table-cells-split" class="w-5 h-5"></i></div>
-                        <div class="con">
-                            <div class="text-black font-semibold">Photorealistic renderings</div>
-                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+
+                <!-- Card 3 -->
+                <div class="example-card min-h-[240px]">
+                    <div class="example-card-inner">
+
+                        <div class="example-card-front bg-stone-100 rounded-xl p-6 border border-primary/20">
+                            <div class="flex flex-col h-full gap-3">
+                                <div class="text-primary">
+                                    <i data-lucide="table-cells-split" class="w-7 h-7"></i>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <div class="text-black font-bold">Architectural plans &amp; specs</div>
+                                    <p>Drawings and specifications ready to price, permit and build.</p>
+                                </div>
+
+                                <div class="mt-auto pt-8">
+                                    <button type="button"
+                                        class="flip-trigger flex items-center gap-2 text-primary text-sm font-bold">
+                                        <i data-lucide="square-arrow-out-up-right" class="w-4 h-4"></i>
+                                        See an example
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-1  mt-12">
-                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
-                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+
+                        <div class="example-card-back">
+                            <img src="img/03-residential-landscape.png"
+                                alt="Architectural plans and specifications example" class="example-card-image">
+
+                            <div class="example-card-caption">
+                                <span>Architectural plans &amp; specs</span>
+                                <button type="button" class="flip-back">
+                                    <i data-lucide="corner-up-left" class="w-4 h-4"></i>
+                                    Back
+                                </button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 min-h-24 border border-primary/20">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-primary"><i data-lucide="file-chart-line" class="w-5 h-5"></i></div>
-                        <div class="con">
-                            <div class="text-black font-semibold">Photorealistic renderings</div>
-                            <p>Exteriors and landscapes, shown on the client's own home.</p>
+
+                <!-- Card 4 -->
+                <div class="example-card min-h-[240px]">
+                    <div class="example-card-inner">
+
+                        <div class="example-card-front bg-stone-100 rounded-xl p-6 border border-primary/20">
+                            <div class="flex flex-col h-full gap-3">
+                                <div class="text-primary">
+                                    <i data-lucide="file-chart-line" class="w-7 h-7"></i>
+                                </div>
+
+                                <div class="flex flex-col gap-1">
+                                    <div class="text-black font-bold">Client Presentations</div>
+                                    <p>Presentations carrying your logo that move clients to a yes.</p>
+                                </div>
+
+                                <div class="mt-auto pt-8">
+                                    <button type="button"
+                                        class="flip-trigger flex items-center gap-2 text-primary text-sm font-bold">
+                                        <i data-lucide="square-arrow-out-up-right" class="w-4 h-4"></i>
+                                        See an example
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-1  mt-12">
-                            <a class="flex items-center gap-1 text-primary text-sm font-semibold" href="#"><i
-                                    data-lucide="tag" class="w-3 h-3"></i> See an example</a>
+
+                        <div class="example-card-back">
+                            <img src="img/04-dzinly-pro-presentation.png" alt="Client presentation example"
+                                class="example-card-image">
+
+                            <div class="example-card-caption">
+                                <span>Client presentation example</span>
+                                <button type="button" class="flip-back">
+                                    <i data-lucide="corner-up-left" class="w-4 h-4"></i>
+                                    Back
+                                </button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-5 gap-4">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-15 gap-4">
 
                 <!-- CARD 01 -->
                 <div class="bg-stone-100 p-10 flex flex-col justify-between rounded-xl border border-primary/20">
@@ -1352,24 +1450,71 @@
                 </table>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 lg:mt-10 gap-4">
-                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 text-primary font-bold">
-                    Will my clients see the DZINLY name?
+
+
+            <div id="accordion-open" data-accordion="open"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 lg:mt-10 gap-4">
+                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 flex flex-col gap-4">
+                    <h5 class="font-medium cursor-pointer" data-accordion-target="#accordion-open-body-1"
+                        aria-expanded="false" aria-controls="accordion-open-body-1">Will my clients see the DZINLY
+                        name?</h5>
+                    <div id="accordion-open-body-1" aria-labelledby="accordion-open-heading-1" class="hidden">
+                        <p>On Professional, deliverables carry your brand with a small “Powered by DZINLY Pro” mark. On
+                            Enterprise, your clients only ever see your name, and our designers and architects are
+                            simply
+                            your design team.</p>
+                    </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 text-primary font-bold">
-                    What is the Copyright Use License?
+                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 flex flex-col gap-4">
+                    <h5 class="font-medium cursor-pointer" data-accordion-target="#accordion-open-body-2"
+                        aria-expanded="false" aria-controls="accordion-open-body-2">What is the Copyright Use License?
+                    </h5>
+                    <div id="accordion-open-body-2" aria-labelledby="accordion-open-heading-2" class="hidden">
+                        <p>It grants your company the right to build from the renderings, plans and specifications we
+                            produce for that project. Design fees cover the work; the license covers using it in the
+                            field.
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 text-primary font-bold">
-                    How are project fees set?
+                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 flex flex-col gap-4">
+                    <h5 class="font-medium cursor-pointer" data-accordion-target="#accordion-open-body-3"
+                        aria-expanded="false" aria-controls="accordion-open-body-3">How are project fees set?</h5>
+                    <div id="accordion-open-body-3" aria-labelledby="accordion-open-heading-3" class="hidden">
+                        <p>Each request is quoted before work begins, typically $150 to $1,000 depending on scope. You
+                            approve the quote before anything is billed. If we make a mistake, we’ll correct it at no
+                            charge. New requests, revisions or changes in scope are quoted separately based on the
+                            work
+                            requested.</p>
+                    </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 text-primary font-bold">
-                    What happens after my fifth project?
+                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 flex flex-col gap-4">
+                    <h5 class="font-medium cursor-pointer" data-accordion-target="#accordion-open-body-4"
+                        aria-expanded="false" aria-controls="accordion-open-body-4">What happens after my fifth project?
+                    </h5>
+                    <div id="accordion-open-body-4" aria-labelledby="accordion-open-heading-4" class="hidden">
+                        <p>Your five existing projects stay in your dashboard and remain accessible. To start additional
+                            projects, simply upgrade to Enterprise for unlimited project access.</p>
+                    </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 text-primary font-bold">
-                    Can I mark up design for my clients?
+                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 flex flex-col gap-4">
+                    <h5 class="font-medium cursor-pointer" data-accordion-target="#accordion-open-body-5"
+                        aria-expanded="false" aria-controls="accordion-open-body-5">Can I mark up design for my clients?
+                    </h5>
+                    <div id="accordion-open-body-5" aria-labelledby="accordion-open-heading-5" class="hidden">
+                        <p>Yes. You set the price your clients pay, giving you the opportunity to build your own margin
+                            into
+                            design services. We’ll walk you through exactly how this works, including pricing and how to
+                            position it with your clients, on your Enterprise onboarding call.</p>
+                    </div>
                 </div>
-                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 text-primary font-bold">
-                    How quickly will I get my designs?
+                <div class="bg-stone-100 rounded-xl p-6 border border-primary/20 flex flex-col gap-4">
+                    <h5 class="font-medium cursor-pointer" data-accordion-target="#accordion-open-body-6"
+                        aria-expanded="false" aria-controls="accordion-open-body-6">How quickly will I get my designs?
+                    </h5>
+                    <div id="accordion-open-body-6" aria-labelledby="accordion-open-heading-6" class="hidden">
+                        <p>Most requests are turned around in just a few days. Our combination of AI and U.S.-based
+                            designers and architects helps move projects from idea to presentation quickly.</p>
+                    </div>
                 </div>
             </div>
 
@@ -1762,7 +1907,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js?v=1.8"></script>
     <script>
         window.addEventListener('load', () => {
             const slider = document.querySelector('img-comparison-slider');
